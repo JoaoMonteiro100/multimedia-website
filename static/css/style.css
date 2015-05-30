@@ -224,16 +224,17 @@ h4, h5, h6 {
 
 /* line 221, style.scss */
 #content {
-  padding-top: 320px;
+  padding-top: 300px;
   padding-bottom: 435px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
   margin: 0;
   left: 0;
+  text-align: center;
   z-index: -1;
 }
 
-/* line 231, style.scss */
+/* line 232, style.scss */
 #footer {
   display: block;
   position: absolute;
@@ -251,7 +252,7 @@ h4, h5, h6 {
   padding-top: 20px;
 }
 
-/* line 248, style.scss */
+/* line 249, style.scss */
 .social-media img {
   height: 65px;
   padding: 10px;
@@ -259,37 +260,37 @@ h4, h5, h6 {
   border-radius: 50%;
 }
 
-/* line 255, style.scss */
+/* line 256, style.scss */
 .facebook_off, #facebook:hover .facebook_on {
   display: none;
 }
 
-/* line 259, style.scss */
+/* line 260, style.scss */
 .facebook_on, #facebook:hover .facebook_off {
   display: inline;
 }
 
-/* line 263, style.scss */
+/* line 264, style.scss */
 .twitter_off, #twitter:hover .twitter_on {
   display: none;
 }
 
-/* line 267, style.scss */
+/* line 268, style.scss */
 .twitter_on, #twitter:hover .twitter_off {
   display: inline;
 }
 
-/* line 271, style.scss */
+/* line 272, style.scss */
 .pinterest_off, #pinterest:hover .pinterest_on {
   display: none;
 }
 
-/* line 275, style.scss */
+/* line 276, style.scss */
 .pinterest_on, #pinterest:hover .pinterest_off {
   display: inline;
 }
 
-/* line 279, style.scss */
+/* line 280, style.scss */
 #end {
   /* border-top: 6px solid $main-red; */
   display: inline-block;
@@ -307,29 +308,29 @@ h4, h5, h6 {
   z-index: 0;
   padding-bottom: 15px;
 }
-/* line 296, style.scss */
+/* line 297, style.scss */
 #end p {
   color: #878b91;
   display: inline;
 }
-/* line 300, style.scss */
+/* line 301, style.scss */
 #end p a {
   color: #878b91;
 }
-/* line 302, style.scss */
+/* line 303, style.scss */
 #end p a:hover {
   color: #c00000;
 }
-/* line 307, style.scss */
+/* line 308, style.scss */
 #end p small {
   color: #878b91;
 }
-/* line 312, style.scss */
+/* line 313, style.scss */
 #end #penultimate-line {
   display: block;
   margin-top: 15px;
 }
-/* line 317, style.scss */
+/* line 318, style.scss */
 #end #last-line {
   display: block;
   margin-top: 15px;
