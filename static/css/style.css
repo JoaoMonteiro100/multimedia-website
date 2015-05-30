@@ -1,0 +1,336 @@
+/* line 10, style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 14, style.scss */
+body {
+  background: #eeeeee;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* line 21, style.scss */
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #434a54;
+}
+/* line 27, style.scss */
+p a {
+  text-decoration: none;
+  color: #6c0000;
+}
+/* line 30, style.scss */
+p a:hover {
+  color: #c00000;
+}
+/* line 35, style.scss */
+p small {
+  font-size: 0.7em;
+}
+
+/* line 40, style.scss */
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 2.3em;
+  color: #c00000;
+  text-transform: uppercase;
+}
+
+/* line 48, style.scss */
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.9em;
+  color: #6c0000;
+  text-transform: uppercase;
+}
+
+/* line 56, style.scss */
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.9em;
+  color: #434a54;
+  text-transform: uppercase;
+}
+
+/* line 64, style.scss */
+h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.45em;
+  color: #434a54;
+}
+
+/* line 71, style.scss */
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+/* line 76, style.scss */
+#navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 130px;
+  /* transition */
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+/* line 87, style.scss */
+#navbar a#logo {
+  position: relative;
+  display: block;
+  background: #010101;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 250px;
+  width: 250px;
+  top: 0;
+  left: 10%;
+  z-index: 2;
+  /* transition */
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px #434a54;
+}
+/* line 103, style.scss */
+#navbar a#logo div {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0px;
+  height: 250px;
+  background: url("../images/logo-white.jpg") center center no-repeat;
+  background-size: 230px auto;
+  /* transition */
+  -webkit-transition: all 0.1s ease;
+}
+/* line 117, style.scss */
+#navbar ul {
+  position: relative;
+  display: block;
+  color: white;
+  text-align: right;
+  margin-top: -115px;
+  margin-right: 10%;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  /* transition */
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* line 131, style.scss */
+#navbar ul li {
+  display: inline;
+  margin: 2.5%;
+}
+/* line 135, style.scss */
+#navbar ul li a.menu {
+  text-decoration: none;
+  color: white;
+}
+/* line 138, style.scss */
+#navbar ul li a.menu:hover {
+  border-bottom: 3px solid #c00000;
+  padding-bottom: 0.5em;
+  color: #eeeeee;
+}
+
+/* line 148, style.scss */
+#navbar.after-scroll {
+  height: 80px;
+  background: white;
+}
+/* line 152, style.scss */
+#navbar.after-scroll a#logo {
+  height: 95px;
+  width: 260px;
+  top: 0;
+  left: 10%;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  /* transition */
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px #434a54;
+}
+/* line 164, style.scss */
+#navbar.after-scroll a#logo div {
+  bottom: 0%;
+  right: -1%;
+  height: 95px;
+  background: url("../images/logo-hor-white.png") center center no-repeat;
+  background-size: 277px auto;
+  /* transition */
+  -webkit-transition: all 0.1s ease;
+}
+/* line 175, style.scss */
+#navbar.after-scroll ul {
+  margin-top: -65px;
+  font-size: 1em;
+  color: #434a54;
+  /* transition */
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* line 183, style.scss */
+#navbar.after-scroll ul li {
+  display: inline;
+  margin: 2.5%;
+}
+/* line 187, style.scss */
+#navbar.after-scroll ul li a.menu {
+  text-decoration: none;
+  color: #434a54;
+}
+/* line 191, style.scss */
+#navbar.after-scroll ul li a.menu:hover {
+  color: #878b91;
+}
+
+/* line 199, style.scss */
+#background {
+  width: 100%;
+  height: 300px;
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background: url("../images/background.jpg") right top fixed;
+  z-index: -3;
+}
+/* line 210, style.scss */
+#background div.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(67, 74, 84, 0.8);
+  z-index: -2;
+}
+
+/* line 221, style.scss */
+#content {
+  padding-top: 320px;
+  padding-bottom: 435px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* line 231, style.scss */
+#footer {
+  display: block;
+  position: absolute;
+  margin: 0;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  background-color: #6c0000;
+  text-align: center;
+  color: white;
+  height: 220px;
+  vertical-align: middle;
+  line-height: 0px;
+  z-index: 0;
+  padding-top: 20px;
+}
+
+/* line 248, style.scss */
+.social-media img {
+  height: 65px;
+  padding: 10px;
+  padding-top: 10px;
+  border-radius: 50%;
+}
+
+/* line 255, style.scss */
+.facebook_off, #facebook:hover .facebook_on {
+  display: none;
+}
+
+/* line 259, style.scss */
+.facebook_on, #facebook:hover .facebook_off {
+  display: inline;
+}
+
+/* line 263, style.scss */
+.twitter_off, #twitter:hover .twitter_on {
+  display: none;
+}
+
+/* line 267, style.scss */
+.twitter_on, #twitter:hover .twitter_off {
+  display: inline;
+}
+
+/* line 271, style.scss */
+.pinterest_off, #pinterest:hover .pinterest_on {
+  display: none;
+}
+
+/* line 275, style.scss */
+.pinterest_on, #pinterest:hover .pinterest_off {
+  display: inline;
+}
+
+/* line 279, style.scss */
+#end {
+  /* border-top: 6px solid $main-red; */
+  display: inline-block;
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #010101;
+  text-align: center;
+  color: #878b91;
+  height: 35px;
+  vertical-align: middle;
+  line-height: 0px;
+  z-index: 0;
+  padding-bottom: 15px;
+}
+/* line 296, style.scss */
+#end p {
+  color: #878b91;
+  display: inline;
+}
+/* line 300, style.scss */
+#end p a {
+  color: #878b91;
+}
+/* line 302, style.scss */
+#end p a:hover {
+  color: #c00000;
+}
+/* line 307, style.scss */
+#end p small {
+  color: #878b91;
+}
+/* line 312, style.scss */
+#end #penultimate-line {
+  display: block;
+  margin-top: 15px;
+}
+/* line 317, style.scss */
+#end #last-line {
+  display: block;
+  margin-top: 15px;
+}
