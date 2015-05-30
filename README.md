@@ -1,2 +1,2 @@
-# site-neuroav
-Website for NeuroAV.
+# multimedia-website
+Website developed for the subject "Multimedia and New Services".
