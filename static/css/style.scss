@@ -219,7 +219,7 @@ h4 ,h5,h6 {
 }
 
 #content {
-	padding-top: 270px;
+	padding-top: 250px;
 	padding-bottom: 435px;
 	padding-left: 15%;
 	padding-right: 15%;
@@ -227,9 +227,30 @@ h4 ,h5,h6 {
 	left: 0;
 	text-align: center;
 	z-index: -1;
+}
+
+section > div {
+	padding-top: 50px;
+}
+
+#race-id {
+	display: block;
+	position: absolute;
+	padding: 30px;
+	padding-left: 20%;
+	padding-right: 50%;
+	left: 0;
+	right: 0;
+	background: $medium-gray;
+	text-align:left;
+	
+		h3,h4,h5,h6,p {
+			position: relative;
+			top: -35px;
+		}
 		
-		div {
-			padding-top: 30px;
+		p {
+			color: $white;
 		}
 }
 
@@ -322,7 +343,6 @@ h4 ,h5,h6 {
 }
 
 #end {
-	/* border-top: 6px solid $main-red; */
 	display: inline-block;
 	position: absolute;
 	margin: 0;
