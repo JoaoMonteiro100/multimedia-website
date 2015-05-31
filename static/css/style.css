@@ -121,7 +121,7 @@ h4, h5, h6 {
   display: block;
   color: white;
   text-align: right;
-  margin-top: -115px;
+  margin-top: -100px;
   margin-right: 10%;
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
@@ -236,10 +236,60 @@ h4, h5, h6 {
 
 /* line 232, style.scss */
 section > div {
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 /* line 236, style.scss */
+.asura_off, #asura:hover .asura_on {
+  display: none;
+}
+
+/* line 240, style.scss */
+.asura_on, #asura:hover .asura_off {
+  display: inline;
+}
+
+/* line 244, style.scss */
+.sylvari_off, #sylvari:hover .sylvari_on {
+  display: none;
+}
+
+/* line 248, style.scss */
+.sylvari_on, #sylvari:hover .sylvari_off {
+  display: inline;
+}
+
+/* line 252, style.scss */
+.human_off, #human:hover .human_on {
+  display: none;
+}
+
+/* line 256, style.scss */
+.human_on, #human:hover .human_off {
+  display: inline;
+}
+
+/* line 260, style.scss */
+.norn_off, #norn:hover .norn_on {
+  display: none;
+}
+
+/* line 264, style.scss */
+.norn_on, #norn:hover .norn_off {
+  display: inline;
+}
+
+/* line 268, style.scss */
+.charr_off, #charr:hover .charr_on {
+  display: none;
+}
+
+/* line 272, style.scss */
+.charr_on, #charr:hover .charr_off {
+  display: inline;
+}
+
+/* line 276, style.scss */
 #race-id {
   display: block;
   position: absolute;
@@ -251,35 +301,49 @@ section > div {
   background: #878b91;
   text-align: left;
 }
-/* line 247, style.scss */
+/* line 287, style.scss */
 #race-id h3, #race-id h4, #race-id h5, #race-id h6, #race-id p {
   position: relative;
-  top: -35px;
+  top: -20px;
 }
-/* line 252, style.scss */
+/* line 292, style.scss */
 #race-id p {
   color: white;
 }
 
-/* line 257, style.scss */
+/* line 297, style.scss */
+#asura-carousel {
+  display: block;
+  position: absolute;
+  left: 53%;
+  right: 20%;
+  top: 40px;
+  height: auto;
+}
+
+/* line 306, style.scss */
 #footer {
   display: block;
   position: absolute;
   margin: 0;
-  bottom: 15px;
+  bottom: 50px;
   left: 0;
   right: 0;
   background-color: #6c0000;
   text-align: center;
   color: white;
-  height: 220px;
+  height: 225px;
   vertical-align: middle;
   line-height: 0px;
   z-index: 0;
   padding-top: 20px;
 }
+/* line 321, style.scss */
+#footer a {
+  text-decoration: none;
+}
 
-/* line 274, style.scss */
+/* line 326, style.scss */
 .social-media img {
   height: 65px;
   padding: 10px;
@@ -287,87 +351,37 @@ section > div {
   border-radius: 50%;
 }
 
-/* line 281, style.scss */
-.asura_off, #asura:hover .asura_on {
-  display: none;
-}
-
-/* line 285, style.scss */
-.asura_on, #asura:hover .asura_off {
-  display: inline;
-}
-
-/* line 289, style.scss */
-.sylvari_off, #sylvari:hover .sylvari_on {
-  display: none;
-}
-
-/* line 293, style.scss */
-.sylvari_on, #sylvari:hover .sylvari_off {
-  display: inline;
-}
-
-/* line 297, style.scss */
-.human_off, #human:hover .human_on {
-  display: none;
-}
-
-/* line 301, style.scss */
-.human_on, #human:hover .human_off {
-  display: inline;
-}
-
-/* line 305, style.scss */
-.norn_off, #norn:hover .norn_on {
-  display: none;
-}
-
-/* line 309, style.scss */
-.norn_on, #norn:hover .norn_off {
-  display: inline;
-}
-
-/* line 313, style.scss */
-.charr_off, #charr:hover .charr_on {
-  display: none;
-}
-
-/* line 317, style.scss */
-.charr_on, #charr:hover .charr_off {
-  display: inline;
-}
-
-/* line 321, style.scss */
+/* line 333, style.scss */
 .facebook_off, #facebook:hover .facebook_on {
   display: none;
 }
 
-/* line 325, style.scss */
+/* line 337, style.scss */
 .facebook_on, #facebook:hover .facebook_off {
   display: inline;
 }
 
-/* line 329, style.scss */
+/* line 341, style.scss */
 .twitter_off, #twitter:hover .twitter_on {
   display: none;
 }
 
-/* line 333, style.scss */
+/* line 345, style.scss */
 .twitter_on, #twitter:hover .twitter_off {
   display: inline;
 }
 
-/* line 337, style.scss */
+/* line 349, style.scss */
 .pinterest_off, #pinterest:hover .pinterest_on {
   display: none;
 }
 
-/* line 341, style.scss */
+/* line 353, style.scss */
 .pinterest_on, #pinterest:hover .pinterest_off {
   display: inline;
 }
 
-/* line 345, style.scss */
+/* line 357, style.scss */
 #end {
   display: inline-block;
   position: absolute;
@@ -378,35 +392,35 @@ section > div {
   background-color: #010101;
   text-align: center;
   color: #878b91;
-  height: 35px;
+  height: 50px;
   vertical-align: middle;
   line-height: 0px;
   z-index: 0;
   padding-bottom: 15px;
 }
-/* line 361, style.scss */
+/* line 373, style.scss */
 #end p {
   color: #878b91;
   display: inline;
 }
-/* line 365, style.scss */
+/* line 377, style.scss */
 #end p a {
   color: #878b91;
 }
-/* line 367, style.scss */
+/* line 379, style.scss */
 #end p a:hover {
   color: #c00000;
 }
-/* line 372, style.scss */
+/* line 384, style.scss */
 #end p small {
   color: #878b91;
 }
-/* line 377, style.scss */
+/* line 389, style.scss */
 #end #penultimate-line {
   display: block;
   margin-top: 15px;
 }
-/* line 382, style.scss */
+/* line 394, style.scss */
 #end #last-line {
   display: block;
   margin-top: 15px;

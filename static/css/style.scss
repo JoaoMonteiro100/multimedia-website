@@ -119,7 +119,7 @@ h4 ,h5,h6 {
 		display: block;
 		color: $white;
 		text-align: right;
-		margin-top: -115px;
+		margin-top: -100px;
 		margin-right: 10%;
 		font-family: 'Josefin Sans', sans-serif;
 		text-transform: uppercase;
@@ -230,52 +230,7 @@ h4 ,h5,h6 {
 }
 
 section > div {
-	padding-top: 50px;
-}
-
-#race-id {
-	display: block;
-	position: absolute;
-	padding: 30px;
-	padding-left: 20%;
-	padding-right: 50%;
-	left: 0;
-	right: 0;
-	background: $medium-gray;
-	text-align:left;
-	
-		h3,h4,h5,h6,p {
-			position: relative;
-			top: -35px;
-		}
-		
-		p {
-			color: $white;
-		}
-}
-
-#footer {
-	display: block;
-	position: absolute;
-	margin: 0;
-	bottom: 15px;
-	left: 0;
-	right: 0;
-	background-color: $secondary-red;
-	text-align: center;
-	color: $white;
-	height: 220px;
-	vertical-align: middle;
-	line-height: 0px;
-	z-index: 0;
-	padding-top: 20px;
-}
-
-.social-media img {
-	height: 65px;
-	padding: 10px;
-	padding-top: 10px;
-	border-radius: 50%;
+	padding-top: 70px;
 }
 
 .asura_off, #asura:hover .asura_on{
@@ -318,6 +273,63 @@ section > div {
 	display:inline;
 }
 
+#race-id {
+	display: block;
+	position: absolute;
+	padding: 30px;
+	padding-left: 20%;
+	padding-right: 50%;
+	left: 0;
+	right: 0;
+	background: $medium-gray;
+	text-align:left;
+	
+		h3,h4,h5,h6,p {
+			position: relative;
+			top: -20px;
+		}
+		
+		p {
+			color: $white;
+		}
+}
+
+#asura-carousel {
+	display: block;
+	position: absolute;
+	left: 53%;
+	right: 20%;
+	top: 40px;
+	height: auto;
+}
+
+#footer {
+	display: block;
+	position: absolute;
+	margin: 0;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+	background-color: $secondary-red;
+	text-align: center;
+	color: $white;
+	height: 225px;
+	vertical-align: middle;
+	line-height: 0px;
+	z-index: 0;
+	padding-top: 20px;
+		a {
+		text-decoration: none;
+		}
+}
+
+.social-media img {
+	height: 65px;
+	padding: 10px;
+	padding-top: 10px;
+	border-radius: 50%;
+}
+
 .facebook_off, #facebook:hover .facebook_on{
 	display:none;
 }
@@ -352,7 +364,7 @@ section > div {
 	background-color: $black;
 	text-align: center;
 	color: $medium-gray;
-	height: 35px;
+	height: 50px;
 	vertical-align: middle;
 	line-height: 0px;
 	z-index: 0;
