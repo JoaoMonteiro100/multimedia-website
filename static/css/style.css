@@ -241,6 +241,11 @@ h4, h5, h6 {
 }
 
 /* line 237, style.scss */
+.bg__image2 {
+  background-image: url("../images/bg2.jpg");
+}
+
+/* line 241, style.scss */
 #content {
   padding-top: 250px;
   padding-bottom: 435px;
@@ -252,62 +257,62 @@ h4, h5, h6 {
   z-index: -1;
 }
 
-/* line 248, style.scss */
+/* line 252, style.scss */
 section > div {
   padding-top: 70px;
 }
 
-/* line 252, style.scss */
+/* line 256, style.scss */
 .asura_off, #asura:hover .asura_on {
   display: none;
 }
 
-/* line 256, style.scss */
+/* line 260, style.scss */
 .asura_on, #asura:hover .asura_off {
   display: inline;
 }
 
-/* line 260, style.scss */
+/* line 264, style.scss */
 .sylvari_off, #sylvari:hover .sylvari_on {
   display: none;
 }
 
-/* line 264, style.scss */
+/* line 268, style.scss */
 .sylvari_on, #sylvari:hover .sylvari_off {
   display: inline;
 }
 
-/* line 268, style.scss */
+/* line 272, style.scss */
 .human_off, #human:hover .human_on {
   display: none;
 }
 
-/* line 272, style.scss */
+/* line 276, style.scss */
 .human_on, #human:hover .human_off {
   display: inline;
 }
 
-/* line 276, style.scss */
+/* line 280, style.scss */
 .norn_off, #norn:hover .norn_on {
   display: none;
 }
 
-/* line 280, style.scss */
+/* line 284, style.scss */
 .norn_on, #norn:hover .norn_off {
   display: inline;
 }
 
-/* line 284, style.scss */
+/* line 288, style.scss */
 .charr_off, #charr:hover .charr_on {
   display: none;
 }
 
-/* line 288, style.scss */
+/* line 292, style.scss */
 .charr_on, #charr:hover .charr_off {
   display: inline;
 }
 
-/* line 292, style.scss */
+/* line 296, style.scss */
 #race-id {
   display: none;
   position: relative;
@@ -319,17 +324,17 @@ section > div {
   background: #878b91;
   text-align: left;
 }
-/* line 303, style.scss */
+/* line 307, style.scss */
 #race-id h3, #race-id h4, #race-id h5, #race-id h6, #race-id p {
   position: relative;
   top: -20px;
 }
-/* line 308, style.scss */
+/* line 312, style.scss */
 #race-id p {
   color: white;
 }
 
-/* line 313, style.scss */
+/* line 317, style.scss */
 .carousel {
   display: block;
   position: relative;
@@ -337,7 +342,7 @@ section > div {
   top: auto;
 }
 
-/* line 320, style.scss */
+/* line 324, style.scss */
 .race-image {
   position: absolute;
   right: -10%;
@@ -345,7 +350,7 @@ section > div {
   height: 60vh;
 }
 
-/* line 327, style.scss */
+/* line 331, style.scss */
 #footer {
   display: block;
   position: absolute;
@@ -362,12 +367,12 @@ section > div {
   z-index: 0;
   padding-top: 20px;
 }
-/* line 342, style.scss */
+/* line 346, style.scss */
 #footer a {
   text-decoration: none;
 }
 
-/* line 347, style.scss */
+/* line 351, style.scss */
 .social-media img {
   height: 65px;
   padding: 10px;
@@ -375,37 +380,37 @@ section > div {
   border-radius: 50%;
 }
 
-/* line 354, style.scss */
+/* line 358, style.scss */
 .facebook_off, #facebook:hover .facebook_on {
   display: none;
 }
 
-/* line 358, style.scss */
+/* line 362, style.scss */
 .facebook_on, #facebook:hover .facebook_off {
   display: inline;
 }
 
-/* line 362, style.scss */
+/* line 366, style.scss */
 .twitter_off, #twitter:hover .twitter_on {
   display: none;
 }
 
-/* line 366, style.scss */
+/* line 370, style.scss */
 .twitter_on, #twitter:hover .twitter_off {
   display: inline;
 }
 
-/* line 370, style.scss */
+/* line 374, style.scss */
 .pinterest_off, #pinterest:hover .pinterest_on {
   display: none;
 }
 
-/* line 374, style.scss */
+/* line 378, style.scss */
 .pinterest_on, #pinterest:hover .pinterest_off {
   display: inline;
 }
 
-/* line 378, style.scss */
+/* line 382, style.scss */
 #end {
   display: inline-block;
   position: absolute;
@@ -422,29 +427,29 @@ section > div {
   z-index: 0;
   padding-bottom: 15px;
 }
-/* line 394, style.scss */
+/* line 398, style.scss */
 #end p {
   color: #878b91;
   display: inline;
 }
-/* line 398, style.scss */
+/* line 402, style.scss */
 #end p a {
   color: #878b91;
 }
-/* line 400, style.scss */
+/* line 404, style.scss */
 #end p a:hover {
   color: #c00000;
 }
-/* line 405, style.scss */
+/* line 409, style.scss */
 #end p small {
   color: #878b91;
 }
-/* line 410, style.scss */
+/* line 414, style.scss */
 #end #penultimate-line {
   display: block;
   margin-top: 15px;
 }
-/* line 415, style.scss */
+/* line 419, style.scss */
 #end #last-line {
   display: block;
   margin-top: 15px;
