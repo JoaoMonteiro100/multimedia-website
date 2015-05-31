@@ -223,6 +223,24 @@ h4, h5, h6 {
 }
 
 /* line 221, style.scss */
+[class*="bg__"] {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 60vh;
+  text-indent: -9999px;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: inset 0 0 1em #111;
+}
+
+/* line 233, style.scss */
+.bg__image {
+  background-image: url("../images/bg1.jpg");
+}
+
+/* line 237, style.scss */
 #content {
   padding-top: 250px;
   padding-bottom: 435px;
@@ -234,94 +252,93 @@ h4, h5, h6 {
   z-index: -1;
 }
 
-/* line 232, style.scss */
+/* line 248, style.scss */
 section > div {
   padding-top: 70px;
 }
 
-/* line 236, style.scss */
+/* line 252, style.scss */
 .asura_off, #asura:hover .asura_on {
   display: none;
 }
 
-/* line 240, style.scss */
+/* line 256, style.scss */
 .asura_on, #asura:hover .asura_off {
   display: inline;
 }
 
-/* line 244, style.scss */
+/* line 260, style.scss */
 .sylvari_off, #sylvari:hover .sylvari_on {
   display: none;
 }
 
-/* line 248, style.scss */
+/* line 264, style.scss */
 .sylvari_on, #sylvari:hover .sylvari_off {
   display: inline;
 }
 
-/* line 252, style.scss */
+/* line 268, style.scss */
 .human_off, #human:hover .human_on {
   display: none;
 }
 
-/* line 256, style.scss */
+/* line 272, style.scss */
 .human_on, #human:hover .human_off {
   display: inline;
 }
 
-/* line 260, style.scss */
+/* line 276, style.scss */
 .norn_off, #norn:hover .norn_on {
   display: none;
 }
 
-/* line 264, style.scss */
+/* line 280, style.scss */
 .norn_on, #norn:hover .norn_off {
   display: inline;
 }
 
-/* line 268, style.scss */
+/* line 284, style.scss */
 .charr_off, #charr:hover .charr_on {
   display: none;
 }
 
-/* line 272, style.scss */
+/* line 288, style.scss */
 .charr_on, #charr:hover .charr_off {
   display: inline;
 }
 
-/* line 276, style.scss */
+/* line 292, style.scss */
 #race-id {
   display: block;
-  position: absolute;
+  position: relative;
   padding: 30px;
-  padding-left: 20%;
+  padding-left: 5%;
   padding-right: 50%;
   left: 0;
   right: 0;
   background: #878b91;
   text-align: left;
 }
-/* line 287, style.scss */
+/* line 303, style.scss */
 #race-id h3, #race-id h4, #race-id h5, #race-id h6, #race-id p {
   position: relative;
   top: -20px;
 }
-/* line 292, style.scss */
+/* line 308, style.scss */
 #race-id p {
   color: white;
 }
 
-/* line 297, style.scss */
+/* line 313, style.scss */
 #asura-carousel {
   display: block;
   position: absolute;
   left: 53%;
-  right: 20%;
-  top: 40px;
-  height: auto;
+  right: 2%;
+  top: 5%;
 }
 
-/* line 306, style.scss */
+/* line 321, style.scss */
 #footer {
   display: block;
   position: absolute;
@@ -338,12 +355,12 @@ section > div {
   z-index: 0;
   padding-top: 20px;
 }
-/* line 321, style.scss */
+/* line 336, style.scss */
 #footer a {
   text-decoration: none;
 }
 
-/* line 326, style.scss */
+/* line 341, style.scss */
 .social-media img {
   height: 65px;
   padding: 10px;
@@ -351,37 +368,37 @@ section > div {
   border-radius: 50%;
 }
 
-/* line 333, style.scss */
+/* line 348, style.scss */
 .facebook_off, #facebook:hover .facebook_on {
   display: none;
 }
 
-/* line 337, style.scss */
+/* line 352, style.scss */
 .facebook_on, #facebook:hover .facebook_off {
   display: inline;
 }
 
-/* line 341, style.scss */
+/* line 356, style.scss */
 .twitter_off, #twitter:hover .twitter_on {
   display: none;
 }
 
-/* line 345, style.scss */
+/* line 360, style.scss */
 .twitter_on, #twitter:hover .twitter_off {
   display: inline;
 }
 
-/* line 349, style.scss */
+/* line 364, style.scss */
 .pinterest_off, #pinterest:hover .pinterest_on {
   display: none;
 }
 
-/* line 353, style.scss */
+/* line 368, style.scss */
 .pinterest_on, #pinterest:hover .pinterest_off {
   display: inline;
 }
 
-/* line 357, style.scss */
+/* line 372, style.scss */
 #end {
   display: inline-block;
   position: absolute;
@@ -398,29 +415,29 @@ section > div {
   z-index: 0;
   padding-bottom: 15px;
 }
-/* line 373, style.scss */
+/* line 388, style.scss */
 #end p {
   color: #878b91;
   display: inline;
 }
-/* line 377, style.scss */
+/* line 392, style.scss */
 #end p a {
   color: #878b91;
 }
-/* line 379, style.scss */
+/* line 394, style.scss */
 #end p a:hover {
   color: #c00000;
 }
-/* line 384, style.scss */
+/* line 399, style.scss */
 #end p small {
   color: #878b91;
 }
-/* line 389, style.scss */
+/* line 404, style.scss */
 #end #penultimate-line {
   display: block;
   margin-top: 15px;
 }
-/* line 394, style.scss */
+/* line 409, style.scss */
 #end #last-line {
   display: block;
   margin-top: 15px;

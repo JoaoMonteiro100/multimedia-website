@@ -218,6 +218,22 @@ h4 ,h5,h6 {
 	}
 }
 
+[class*="bg__"] {
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 60vh;
+	text-indent: -9999px;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	box-shadow: inset 0 0 1em #111;
+}
+
+.bg__image {
+	background-image: url("../images/bg1.jpg");
+}
+
 #content {
 	padding-top: 250px;
 	padding-bottom: 435px;
@@ -275,9 +291,9 @@ section > div {
 
 #race-id {
 	display: block;
-	position: absolute;
+	position: relative;
 	padding: 30px;
-	padding-left: 20%;
+	padding-left: 5%;
 	padding-right: 50%;
 	left: 0;
 	right: 0;
@@ -298,9 +314,8 @@ section > div {
 	display: block;
 	position: absolute;
 	left: 53%;
-	right: 20%;
-	top: 40px;
-	height: auto;
+	right: 2%;
+	top: 5%;
 }
 
 #footer {
