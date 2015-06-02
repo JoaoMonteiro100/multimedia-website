@@ -292,10 +292,20 @@
 				<div class="bg__image2"></div>
 			</div>
 			
-			<div id="professions" style="position:relative;top:450px;">
+			<div id="professions" style="position:relative;top:450px;padding-bottom:500px;">
 				<h1>Professions</h1>
-				<p>Choose from nine distinct professions, each with its own unique powers and devastating attacks.<br>No matter how you like to play, you’ll find a profession that fits your style.</p>
-				<div id="canvasDiv" style="padding-bottom:500px;">ola</div>
+				<p>Choose from eight distinct professions, each with its own unique powers and devastating attacks.<br>No matter how you like to play, you’ll find a profession that fits your style.<br>
+				Below, you can click a profession's icon to see a characteristic ability of that profession represented on our animated asura called Trixx.</p>
+				<div id="canvasDiv"></div>
+				<div id="prof-icons" style="padding-top: 30px;">
+					<img id="elementalist-icon" src="static/images/elementalist-icon.png" style="position:inline-block; height:80px;" />
+					<img id="mesmer-icon" src="static/images/mesmer-icon.png" style="position:inline-block; height:80px;" />
+					<img id="necromancer-icon" src="static/images/necromancer-icon.png" style="position:inline-block; height:80px;" />
+					<img id="ranger-icon" src="static/images/ranger-icon.png" style="position:inline-block; height:80px;" />
+					<img id="thief-icon" src="static/images/thief-icon.png" style="position:inline-block; height:80px;" />
+					<img id="engineer-icon" src="static/images/engineer-icon.png" style="position:inline-block; height:80px;" />
+					<img id="guardian-icon" src="static/images/guardian-icon.png" style="position:inline-block; height:80px;" />
+					<img id="warrior-icon" src="static/images/warrior-icon.png" style="position:inline-block; height:80px;" />
 			</div>
 		
 			<div style="position:relative;top:800px;">
@@ -344,9 +354,17 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="static/js/script.js"></script>
 	<script src="static/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="html5-canvas-game-character-1.js"></script>
+	<script type="text/javascript" src="static/js/game-character.js"></script>
     <script type="text/javascript">
-    	 prepareCanvas(document.getElementById("canvasDiv"), 490, 220);
+    	 prepareCanvas(document.getElementById("canvasDiv"), 570, 220);
+		 document.getElementById("elementalist-icon").onmousedown = function() { becomeEle(); }
+		 document.getElementById("mesmer-icon").onmousedown = function() { becomeMesmer(); }
+		 document.getElementById("necromancer-icon").onmousedown = function() { becomeNecro(); }
+		 document.getElementById("ranger-icon").onmousedown = function() { becomeRanger(); }
+		 document.getElementById("thief-icon").onmousedown = function() { becomeThief(); }
+		 document.getElementById("engineer-icon").onmousedown = function() { becomeEngi(); }
+		 document.getElementById("guardian-icon").onmousedown = function() { becomeGuardian(); }
+		 document.getElementById("warrior-icon").onmousedown = function() { becomeWarrior(); }
     </script>
 	
 </body>
