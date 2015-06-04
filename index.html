@@ -35,7 +35,14 @@
 			<div id="about-us">
 				<img src="static/images/header2.png" style="position:absolute;right:0;top:300px;width:50%;z-index:-1;" />
 				<h1>About Us</h1>
-				<p>We're students of the "Multimedia and New Services" subject, and our aim was to make a <strong>dynamic website</strong> filled with <strong>multimedia content</strong>. For this purpose, we chose <strong><i>Guild Wars 2</i></strong> as our theme because of its interesting visuals and engaging gameplay mechanics.<br><strong>What follows is our own version of what a multimedia-filled fansite would look like.</strong></p>
+				<p><strong>Unveiling the Mists</strong> is a fansite for <strong><a href="https://www.guildwars2.com/en/">Guild Wars 2</a></strong> (GW2). Our goal is to show off the <strong>most defining aspects of the game</strong> in an entertaining and appealing way. To reach this goal, we opted to include a lot of different multimedia content.
+				<br><br>The name for our fansite was derived from the lore of the Guild Wars universe where the Mists are a <strong>magical protoreality</strong> that makes up the fabric of space and time. Our intent is to explain <strong>how the game works</strong>, which is akin to unveiling the mysterious unknown that is the Mists.
+				<br><br>There are <strong>5 playable races</strong> in GW2 and each of them can play any of the <strong>8 available professions</strong>. Below we can see the distribution of the players per race and per profession. Keep scrolling if you want to know more about them!</p>
+
+				<div id="piechart_3d"></div>
+				
+				<div id="columnchart_values"></div>
+				
 			</div>
 			
 			<div class="parallax">
@@ -352,19 +359,20 @@
 	</div>
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	<script src="static/js/script.js"></script>
 	<script src="static/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="static/js/game-character.js"></script>
     <script type="text/javascript">
-    	 prepareCanvas(document.getElementById("canvasDiv"), 570, 220);
-		 document.getElementById("elementalist-icon").onmousedown = function() { becomeEle(); }
-		 document.getElementById("mesmer-icon").onmousedown = function() { becomeMesmer(); }
-		 document.getElementById("necromancer-icon").onmousedown = function() { becomeNecro(); }
-		 document.getElementById("ranger-icon").onmousedown = function() { becomeRanger(); }
-		 document.getElementById("thief-icon").onmousedown = function() { becomeThief(); }
-		 document.getElementById("engineer-icon").onmousedown = function() { becomeEngi(); }
-		 document.getElementById("guardian-icon").onmousedown = function() { becomeGuardian(); }
-		 document.getElementById("warrior-icon").onmousedown = function() { becomeWarrior(); }
+		prepareCanvas(document.getElementById("canvasDiv"), 570, 220);
+		document.getElementById("elementalist-icon").onmousedown = function() { becomeEle(); }
+		document.getElementById("mesmer-icon").onmousedown = function() { becomeMesmer(); }
+		document.getElementById("necromancer-icon").onmousedown = function() { becomeNecro(); }
+		document.getElementById("ranger-icon").onmousedown = function() { becomeRanger(); }
+		document.getElementById("thief-icon").onmousedown = function() { becomeThief(); }
+		document.getElementById("engineer-icon").onmousedown = function() { becomeEngi(); }
+		document.getElementById("guardian-icon").onmousedown = function() { becomeGuardian(); }
+		document.getElementById("warrior-icon").onmousedown = function() { becomeWarrior(); }
     </script>
 	
 </body>

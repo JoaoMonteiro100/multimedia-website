@@ -43,6 +43,7 @@ h1 {
 	font-size: 2.3em;
 	color: $main-red;
 	text-transform: uppercase;
+	padding-bottom: 20px;
 }
 
 h2 {
@@ -247,6 +248,23 @@ h4 ,h5,h6 {
 	left: 0;
 	text-align: center;
 	z-index: -1;
+}
+#about-us {
+	padding-bottom: 340px;
+}
+
+#piechart_3d {
+	float:left;
+	width: 50%;
+	height: 370px;
+	padding-top: 50px;
+}
+
+#columnchart_values {
+	float:left;
+	width: 50%;
+	height: 350px;
+	padding-top: 50px;
 }
 
 section > div {
