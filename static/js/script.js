@@ -11,6 +11,10 @@ $window.scroll(function() {
 	}
 });
 
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+
 /*
 	Pie chart for player breakdown by race
 */

@@ -231,14 +231,6 @@ h4 ,h5,h6 {
 	box-shadow: inset 0 0 1em $black;
 }
 
-.bg__image {
-	background-image: url("../images/bg1.jpg");
-}
-
-.bg__image2 {
-	background-image: url("../images/bg2.jpg");
-}
-
 #content {
 	padding-top: 250px;
 	padding-bottom: 435px;
@@ -269,6 +261,18 @@ h4 ,h5,h6 {
 
 section > div {
 	padding-top: 70px;
+}
+
+.bg__image {
+	background-image: url("../images/bg1.jpg");
+}
+
+.bg__image2 {
+	background-image: url("../images/bg2.jpg");
+}
+
+.bg__image3 {
+	background-image: url("../images/bg3.jpg");
 }
 
 .asura_off, #asura:hover .asura_on{
@@ -318,7 +322,6 @@ section > div {
 	padding-left: 5%;
 	padding-right: 40%;
 	left: 0;
-	right: 0;
 	background: $medium-gray;
 	text-align:left;
 	
@@ -336,7 +339,6 @@ section > div {
 	display: block;
 	position: relative;
 	left: 0;
-	top: auto;
 }
 
 .race-image {

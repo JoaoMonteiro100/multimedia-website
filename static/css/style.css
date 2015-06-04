@@ -237,16 +237,6 @@ h4, h5, h6 {
 }
 
 /* line 234, style.scss */
-.bg__image {
-  background-image: url("../images/bg1.jpg");
-}
-
-/* line 238, style.scss */
-.bg__image2 {
-  background-image: url("../images/bg2.jpg");
-}
-
-/* line 242, style.scss */
 #content {
   padding-top: 250px;
   padding-bottom: 435px;
@@ -258,12 +248,12 @@ h4, h5, h6 {
   z-index: -1;
 }
 
-/* line 252, style.scss */
+/* line 244, style.scss */
 #about-us {
   padding-bottom: 340px;
 }
 
-/* line 256, style.scss */
+/* line 248, style.scss */
 #piechart_3d {
   float: left;
   width: 50%;
@@ -271,7 +261,7 @@ h4, h5, h6 {
   padding-top: 50px;
 }
 
-/* line 263, style.scss */
+/* line 255, style.scss */
 #columnchart_values {
   float: left;
   width: 50%;
@@ -279,62 +269,77 @@ h4, h5, h6 {
   padding-top: 50px;
 }
 
-/* line 270, style.scss */
+/* line 262, style.scss */
 section > div {
   padding-top: 70px;
 }
 
+/* line 266, style.scss */
+.bg__image {
+  background-image: url("../images/bg1.jpg");
+}
+
+/* line 270, style.scss */
+.bg__image2 {
+  background-image: url("../images/bg2.jpg");
+}
+
 /* line 274, style.scss */
+.bg__image3 {
+  background-image: url("../images/bg3.jpg");
+}
+
+/* line 278, style.scss */
 .asura_off, #asura:hover .asura_on {
   display: none;
 }
 
-/* line 278, style.scss */
+/* line 282, style.scss */
 .asura_on, #asura:hover .asura_off {
   display: inline;
 }
 
-/* line 282, style.scss */
+/* line 286, style.scss */
 .sylvari_off, #sylvari:hover .sylvari_on {
   display: none;
 }
 
-/* line 286, style.scss */
+/* line 290, style.scss */
 .sylvari_on, #sylvari:hover .sylvari_off {
   display: inline;
 }
 
-/* line 290, style.scss */
+/* line 294, style.scss */
 .human_off, #human:hover .human_on {
   display: none;
 }
 
-/* line 294, style.scss */
+/* line 298, style.scss */
 .human_on, #human:hover .human_off {
   display: inline;
 }
 
-/* line 298, style.scss */
+/* line 302, style.scss */
 .norn_off, #norn:hover .norn_on {
   display: none;
 }
 
-/* line 302, style.scss */
+/* line 306, style.scss */
 .norn_on, #norn:hover .norn_off {
   display: inline;
 }
 
-/* line 306, style.scss */
+/* line 310, style.scss */
 .charr_off, #charr:hover .charr_on {
   display: none;
 }
 
-/* line 310, style.scss */
+/* line 314, style.scss */
 .charr_on, #charr:hover .charr_off {
   display: inline;
 }
 
-/* line 314, style.scss */
+/* line 318, style.scss */
 #race-id {
   display: none;
   position: relative;
@@ -342,29 +347,27 @@ section > div {
   padding-left: 5%;
   padding-right: 40%;
   left: 0;
-  right: 0;
   background: #878b91;
   text-align: left;
 }
-/* line 325, style.scss */
+/* line 328, style.scss */
 #race-id h3, #race-id h4, #race-id h5, #race-id h6, #race-id p {
   position: relative;
   top: -20px;
 }
-/* line 330, style.scss */
+/* line 333, style.scss */
 #race-id p {
   color: white;
 }
 
-/* line 335, style.scss */
+/* line 338, style.scss */
 .carousel {
   display: block;
   position: relative;
   left: 0;
-  top: auto;
 }
 
-/* line 342, style.scss */
+/* line 344, style.scss */
 .race-image {
   position: absolute;
   right: -10%;
@@ -372,7 +375,7 @@ section > div {
   height: 60vh;
 }
 
-/* line 349, style.scss */
+/* line 351, style.scss */
 #footer {
   display: block;
   position: absolute;
@@ -389,12 +392,12 @@ section > div {
   z-index: 0;
   padding-top: 20px;
 }
-/* line 364, style.scss */
+/* line 366, style.scss */
 #footer a {
   text-decoration: none;
 }
 
-/* line 369, style.scss */
+/* line 371, style.scss */
 .social-media img {
   height: 65px;
   padding: 10px;
@@ -402,37 +405,37 @@ section > div {
   border-radius: 50%;
 }
 
-/* line 376, style.scss */
+/* line 378, style.scss */
 .facebook_off, #facebook:hover .facebook_on {
   display: none;
 }
 
-/* line 380, style.scss */
+/* line 382, style.scss */
 .facebook_on, #facebook:hover .facebook_off {
   display: inline;
 }
 
-/* line 384, style.scss */
+/* line 386, style.scss */
 .twitter_off, #twitter:hover .twitter_on {
   display: none;
 }
 
-/* line 388, style.scss */
+/* line 390, style.scss */
 .twitter_on, #twitter:hover .twitter_off {
   display: inline;
 }
 
-/* line 392, style.scss */
+/* line 394, style.scss */
 .pinterest_off, #pinterest:hover .pinterest_on {
   display: none;
 }
 
-/* line 396, style.scss */
+/* line 398, style.scss */
 .pinterest_on, #pinterest:hover .pinterest_off {
   display: inline;
 }
 
-/* line 400, style.scss */
+/* line 402, style.scss */
 #end {
   display: inline-block;
   position: absolute;
@@ -449,29 +452,29 @@ section > div {
   z-index: 0;
   padding-bottom: 15px;
 }
-/* line 416, style.scss */
+/* line 418, style.scss */
 #end p {
   color: #878b91;
   display: inline;
 }
-/* line 420, style.scss */
+/* line 422, style.scss */
 #end p a {
   color: #878b91;
 }
-/* line 422, style.scss */
+/* line 424, style.scss */
 #end p a:hover {
   color: #c00000;
 }
-/* line 427, style.scss */
+/* line 429, style.scss */
 #end p small {
   color: #878b91;
 }
-/* line 432, style.scss */
+/* line 434, style.scss */
 #end #penultimate-line {
   display: block;
   margin-top: 15px;
 }
-/* line 437, style.scss */
+/* line 439, style.scss */
 #end #last-line {
   display: block;
   margin-top: 15px;
