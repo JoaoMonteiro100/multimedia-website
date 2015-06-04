@@ -275,44 +275,62 @@ section > div {
 	background-image: url("../images/bg3.jpg");
 }
 
+.bg__image4 {
+	background-image: url("../images/fight.gif");
+	position: absolute;
+	bottom: 225px;
+	width: 100%;
+	z-index: -5;
+}
+
 .asura_off, #asura:hover .asura_on{
 	display:none;
+	padding-top: 30px;
 }
 
 .asura_on, #asura:hover .asura_off{
 	display:inline;
+	padding-top: 30px;
 }
 
 .sylvari_off, #sylvari:hover .sylvari_on{
 	display:none;
+	padding-top: 30px;
 }
 
 .sylvari_on, #sylvari:hover .sylvari_off{
 	display:inline;
+	padding-top: 30px;
 }
 
 .human_off, #human:hover .human_on{
 	display:none;
+	padding-top: 30px;
 }
 
 .human_on, #human:hover .human_off{
 	display:inline;
+	padding-top: 30px;
 }
 
 .norn_off, #norn:hover .norn_on{
 	display:none;
+	padding-top: 30px;
 }
 
 .norn_on, #norn:hover .norn_off{
 	display:inline;
+	padding-top: 30px;
 }
 
 .charr_off, #charr:hover .charr_on{
 	display:none;
+	padding-top: 30px;
 }
 
 .charr_on, #charr:hover .charr_off{
 	display:inline;
+	padding-top: 30px;
 }
 
 #race-id {
@@ -348,11 +366,20 @@ section > div {
 	height: 60vh;
 }
 
+#gamemodes {
+	iframe {
+		position: relative;
+		height: 900px;
+		padding-top: 50px;
+		padding-bottom: 300px;
+	}
+}
+
 #footer {
 	display: block;
 	position: absolute;
 	margin: 0;
-	bottom: 50px;
+	bottom: 0;
 	left: 0;
 	right: 0;
 	background-color: $secondary-red;
@@ -365,6 +392,9 @@ section > div {
 	padding-top: 20px;
 		a {
 			text-decoration: none;
+		}
+		h3 {
+			color: $medium-gray;
 		}
 }
 
@@ -403,9 +433,10 @@ section > div {
 	display: inline-block;
 	position: absolute;
 	margin: 0;
-	bottom: 0;
+	bottom: -15px;
 	left: 0;
 	right: 0;
+	top: 100%;
 	background-color: $black;
 	text-align: center;
 	color: $medium-gray;
@@ -413,7 +444,7 @@ section > div {
 	vertical-align: middle;
 	line-height: 0px;
 	z-index: 0;
-	padding-bottom: 15px;
+	padding-bottom: 0px;
 	
 	p {
 		color: $medium-gray;
@@ -421,6 +452,7 @@ section > div {
 		
 		a {
 		color: $medium-gray;
+		text-decoration: none;
 			&:hover {
 				color: $main-red;
 			}
