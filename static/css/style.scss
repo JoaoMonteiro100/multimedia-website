@@ -218,7 +218,7 @@ h4 ,h5,h6 {
 		z-index: -2;
 	}
 }
-
+/*
 #closed-music {
 	position: fixed;
 	background: $secondary-red;
@@ -231,29 +231,75 @@ h4 ,h5,h6 {
 			width: auto;
 		}
 }
-/*
+
+#open-music {
+	position: fixed;
+	background: $secondary-red;
+	top: 50%;
+	left: 0;
+	width: 50%;
+	z-index: 5;
+	box-shadow: 0 0 10px $black;
+	visibility: hidden;
+}
+*/
+
+#playlist {
+	position:absolute;
+	left: 0;
+	top:330px;
+	width: 15%;
+}
+
 #playlist, #audio {
-	background:#666;
-	width:400px;
-	padding:20px;
 
 	.active a {
-	color:#5DB0E6;
-	text-decoration:none;
+		color: $main-red;
+		text-decoration:none;
 	}
-
-	li a {
-		color:#eeeedd;
-		background:#333;
-		padding:5px;
-		display:block;
+	
+	ul {
+		position:relative;
+		top: 0;
+		left: -40px;
+		width: 100%;
+	}
+	
+	li {
+		.active {
+			background: $secondary-red;
+		}
 		
+		a {
+			color: $white;
+			background: $black;
+			opacity: 0.8;
+			padding:5px;
+			display:block;
+			text-decoration: none;
+			
+			&:hover {
+				color: $light-gray;
+				background: $secondary-red;
+				text-decoration: none;
+			}
+		}
+	}
+	
+	p {
+		color: $white;
 		&:hover {
-			text-decoration:none;
+			color: $light-gray;
+			text-decoration: none;
 		}
 	}
 }
-*/
+
+#audio {
+	display: block;
+	width: 90%;
+}
+
 #content {
 	padding-top: 250px;
 	padding-bottom: 435px;

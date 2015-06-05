@@ -35,91 +35,50 @@
 		</section>
 
 		<section id="playlist">
-			<!-- Modal trigger -->
-			<a href="javascript:null()">
-				<div  id="closed-music" data-toggle="modal" data-target="#open-music">
-					<img src="static/images/music.png" />
-				</div>
-			</a>
-			
-			<!-- Modal -->
-			<div id="open-music" class="modal fade" role="dialog">
-				<div class="modal-dialog modal-lg">
-				
-					<!-- Modal content-->
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<h2 class="modal-title">Music Playlist</h2>
-						</div>
-						
-						<div id="cwrap">
-							<div id="nowPlay">
-								<h3 id="npAction">Paused:</h3>
-								<div id="npTitle"></div>
-							</div>
-							<div id="audiowrap">
-								<div id="audio0">
-									<audio id="audio1" controls="controls" width="300">
-										Your browser does not support the HTML5 Audio Tag.
-									</audio>
-								</div>
-								<div id="extraControls">
-									<button id="btnPrev" class="ctrlbtn">|&lt;&lt; Prev Track</button> <button id="btnNext" class="ctrlbtn">Next Track &gt;&gt;|</button>
-								</div>
-							</div>
-							<div id="plwrap">
-								<div class="plHead">
-									<div class="plHeadNum">Track</div>
-									<div class="plHeadTitle">Title</div>
-									<div class="plHeadLength">Length</div>
-								</div>
-								<ul id="plUL">
-									<li>
-										<div class="plItem">
-											<div class="plNum">1</div>
-											<div class="plTitle">Happy Birthday Variation: In the style of Beethoven</div>
-											<div class="plLength">0:55</div>
-										</div>
-									</li>
-									<li>
-										<div class="plItem">
-											<div class="plNum">2</div>
-											<div class="plTitle">Wedding March Variation 1</div>
-											<div class="plLength">0:37</div>
-										</div>
-									</li>
-									<li>
-										<div class="plItem">
-											<div class="plNum">3</div>
-											<div class="plTitle">Happy Birthday Variation: In the style of Tango</div>
-											<div class="plLength">1:05</div>
-										</div>
-									</li>
-									<li>
-										<div class="plItem">
-											<div class="plNum">4</div>
-											<div class="plTitle">Wedding March Variation 2</div>
-											<div class="plLength">0:40</div>
-										</div>
-									</li>
-									<li>
-										<div class="plItem">
-											<div class="plNum">5</div>
-											<div class="plTitle">Random Classical</div>
-											<div class="plLength">0:59</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-						
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				
-				</div>
+			<div id="music">
+
+				<audio id="audio" preload="auto" tabindex="0" controls="" >
+					<source src="static/music/Guild Wars 2 OST - 01. Overture.mp3">
+					Your Fallback goes here
+				</audio>
+				<ul id="playlist">
+					<li class="active">
+						<a href="static/music/Guild Wars 2 OST - 01. Overture.mp3">
+							<p>Overture</p>
+						</a>
+					</li>
+					<li>
+						<a href="static/music/Guild Wars 2 OST - 06. Heritage of Humanity.mp3">
+							<p>Heritage of Humanity</p>
+						</a>
+					</li>
+					<li>
+						<a href="static/music/Guild Wars 2 OST - 47. The Saga of the Norn.mp3">
+							<p>The Saga of the Norn</p>
+						</a>
+					</li>
+					<li>
+						<a href="static/music/Guild Wars 2 OST - 60. The Charr Triumphant.mp3">
+							<p>The Charr Triumphant</p>
+						</a>
+					</li>
+					<li>
+						<a href="static/music/Guild Wars 2 OST - 53. Battle of the Vanguard.mp3">
+							<p>Battle of the Vanguard</p>
+						</a>
+					</li>
+					<li>
+						<a href="static/music/Guild Wars 2 OST - 76. Scales of Issormir.mp3">
+							<p>Scales of Issormir</p>
+						</a>
+					</li>
+					<li>
+						<a href="static/music/Guild Wars 2 OST - Fear Not This Night (Complete Piano Version).mp3">
+							<p>Fear Not This Night</p>
+						</a>
+					</li>
+				</ul>
+
 			</div>
 		</section>
 		
