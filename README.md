@@ -8,6 +8,6 @@ Found throughout the website, from "on mouse click" actions (such as the buttons
 - Text: found throughout, present in every section.
 - Images: screenshots, concept art and models, found in .jpg, .png and .gif formats.
 - Graphics: shown in the "About Us" section as a way to see the distribution of players between races and professions.
-- Video: shown in the "Game Modes" section, summing up all about that section. Filmed and edited by us (WIP).
-- Audio: WIP.
+- Video: shown in the "Game Modes" section, giving an overview of that section. Filmed and edited by us.
+- Audio: a playlist that starts automatically and includes eight memorable scores from the game's soundtrack.
 - Animation: seen in the "Professions" section. Our friend Tixx shows the different abilities of each profession.

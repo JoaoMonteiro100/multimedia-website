@@ -218,31 +218,6 @@ h4 ,h5,h6 {
 		z-index: -2;
 	}
 }
-/*
-#closed-music {
-	position: fixed;
-	background: $secondary-red;
-	top: 50%;
-	left: 0;
-	z-index: 5;
-	box-shadow: 0 0 10px $black;
-		img {
-			height: 50px;
-			width: auto;
-		}
-}
-
-#open-music {
-	position: fixed;
-	background: $secondary-red;
-	top: 50%;
-	left: 0;
-	width: 50%;
-	z-index: 5;
-	box-shadow: 0 0 10px $black;
-	visibility: hidden;
-}
-*/
 
 #playlist {
 	position:absolute;
@@ -312,6 +287,14 @@ h4 ,h5,h6 {
 }
 #about-us {
 	padding-bottom: 340px;
+	
+	img {
+		position:absolute;
+		right:0;
+		top:300px;
+		width:50%;
+		z-index:-1;
+	}
 }
 
 #piechart_3d {
@@ -362,6 +345,14 @@ section > div {
 	bottom: 225px;
 	width: 100%;
 	z-index: -5;
+}
+
+#races {
+	position:relative;
+	top:60vh;
+	a {
+		text-decoration: none;
+	}
 }
 
 .asura_off, #asura:hover .asura_on{
@@ -419,7 +410,7 @@ section > div {
 	position: relative;
 	padding: 30px;
 	padding-left: 5%;
-	padding-right: 40%;
+	padding-right: 5%;
 	left: 0;
 	background: $medium-gray;
 	text-align:left;
@@ -437,7 +428,8 @@ section > div {
 .carousel {
 	display: block;
 	position: relative;
-	left: 0;
+	left: 20%;
+	max-width: 60%;
 }
 
 .race-image {
@@ -447,7 +439,17 @@ section > div {
 	height: 60vh;
 }
 
+#professions {
+	position:relative;
+	top:450px;
+	padding-bottom:500px;
+}
+
 #gamemodes {
+	position:relative;
+	top:450px;
+	padding-bottom:500px;
+
 	iframe {
 		position: relative;
 		height: 900px;
@@ -471,12 +473,40 @@ section > div {
 	line-height: 0px;
 	z-index: 0;
 	padding-top: 20px;
-		a {
-			text-decoration: none;
-		}
-		h3 {
-			color: $medium-gray;
-		}
+	
+	a {
+		text-decoration: none;
+	}
+	h2 {
+		color: $white;
+	}
+	h3 {
+		color: $medium-gray;
+	}
+	#bottom-dirt {
+		position: absolute;
+		align: center;
+		bottom: 100%;
+		z-index: -5;
+		left: 0;
+		width: 100%;
+		height: 70%;
+	}
+	#sylvari-model {
+		position: absolute;
+		left: 15%;
+		height: 280px;
+		align: left;
+		bottom: -10px;
+		z-index: -1;
+	}
+	#norn-model {
+		position: absolute;
+		right: 10%;
+		height: 320px;
+		bottom: -10px;
+		z-index: -1;
+	}
 }
 
 .social-media img {
@@ -541,6 +571,9 @@ section > div {
 		
 		small {
 			color: $medium-gray;
+			line-height: 0px;
+			padding-top: 0px;
+			top: -10px;
 		}
 	}
 	

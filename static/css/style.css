@@ -223,32 +223,7 @@ h4, h5, h6 {
   z-index: -2;
 }
 
-/*
-#closed-music {
-	position: fixed;
-	background: $secondary-red;
-	top: 50%;
-	left: 0;
-	z-index: 5;
-	box-shadow: 0 0 10px $black;
-		img {
-			height: 50px;
-			width: auto;
-		}
-}
-
-#open-music {
-	position: fixed;
-	background: $secondary-red;
-	top: 50%;
-	left: 0;
-	width: 50%;
-	z-index: 5;
-	box-shadow: 0 0 10px $black;
-	visibility: hidden;
-}
-*/
-/* line 247, style.scss */
+/* line 222, style.scss */
 #playlist {
   position: absolute;
   left: 0;
@@ -256,23 +231,23 @@ h4, h5, h6 {
   width: 15%;
 }
 
-/* line 256, style.scss */
+/* line 231, style.scss */
 #playlist .active a, #audio .active a {
   color: #c00000;
   text-decoration: none;
 }
-/* line 261, style.scss */
+/* line 236, style.scss */
 #playlist ul, #audio ul {
   position: relative;
   top: 0;
   left: -40px;
   width: 100%;
 }
-/* line 269, style.scss */
+/* line 244, style.scss */
 #playlist li .active, #audio li .active {
   background: #6c0000;
 }
-/* line 273, style.scss */
+/* line 248, style.scss */
 #playlist li a, #audio li a {
   color: white;
   background: #010101;
@@ -281,29 +256,29 @@ h4, h5, h6 {
   display: block;
   text-decoration: none;
 }
-/* line 281, style.scss */
+/* line 256, style.scss */
 #playlist li a:hover, #audio li a:hover {
   color: #eeeeee;
   background: #6c0000;
   text-decoration: none;
 }
-/* line 289, style.scss */
+/* line 264, style.scss */
 #playlist p, #audio p {
   color: white;
 }
-/* line 291, style.scss */
+/* line 266, style.scss */
 #playlist p:hover, #audio p:hover {
   color: #eeeeee;
   text-decoration: none;
 }
 
-/* line 298, style.scss */
+/* line 273, style.scss */
 #audio {
   display: block;
   width: 90%;
 }
 
-/* line 303, style.scss */
+/* line 278, style.scss */
 #content {
   padding-top: 250px;
   padding-bottom: 435px;
@@ -315,12 +290,20 @@ h4, h5, h6 {
   z-index: -1;
 }
 
-/* line 313, style.scss */
+/* line 288, style.scss */
 #about-us {
   padding-bottom: 340px;
 }
+/* line 291, style.scss */
+#about-us img {
+  position: absolute;
+  right: 0;
+  top: 300px;
+  width: 50%;
+  z-index: -1;
+}
 
-/* line 317, style.scss */
+/* line 300, style.scss */
 #piechart_3d {
   float: left;
   width: 50%;
@@ -328,7 +311,7 @@ h4, h5, h6 {
   padding-top: 50px;
 }
 
-/* line 324, style.scss */
+/* line 307, style.scss */
 #columnchart_values {
   float: left;
   width: 50%;
@@ -336,12 +319,12 @@ h4, h5, h6 {
   padding-top: 50px;
 }
 
-/* line 331, style.scss */
+/* line 314, style.scss */
 section > div {
   padding-top: 70px;
 }
 
-/* line 335, style.scss */
+/* line 318, style.scss */
 [class*="bg__"] {
   position: absolute;
   left: 0;
@@ -354,22 +337,22 @@ section > div {
   box-shadow: inset 0 0 1em #010101;
 }
 
-/* line 347, style.scss */
+/* line 330, style.scss */
 .bg__image {
   background-image: url("../images/bg1.jpg");
 }
 
-/* line 351, style.scss */
+/* line 334, style.scss */
 .bg__image2 {
   background-image: url("../images/bg2.jpg");
 }
 
-/* line 355, style.scss */
+/* line 338, style.scss */
 .bg__image3 {
   background-image: url("../images/bg3.jpg");
 }
 
-/* line 359, style.scss */
+/* line 342, style.scss */
 .bg__image4 {
   background-image: url("../images/fight.gif");
   position: absolute;
@@ -378,95 +361,106 @@ section > div {
   z-index: -5;
 }
 
-/* line 367, style.scss */
+/* line 350, style.scss */
+#races {
+  position: relative;
+  top: 60vh;
+}
+/* line 353, style.scss */
+#races a {
+  text-decoration: none;
+}
+
+/* line 358, style.scss */
 .asura_off, #asura:hover .asura_on {
   display: none;
   padding-top: 30px;
 }
 
-/* line 372, style.scss */
+/* line 363, style.scss */
 .asura_on, #asura:hover .asura_off {
   display: inline;
   padding-top: 30px;
 }
 
-/* line 377, style.scss */
+/* line 368, style.scss */
 .sylvari_off, #sylvari:hover .sylvari_on {
   display: none;
   padding-top: 30px;
 }
 
-/* line 382, style.scss */
+/* line 373, style.scss */
 .sylvari_on, #sylvari:hover .sylvari_off {
   display: inline;
   padding-top: 30px;
 }
 
-/* line 387, style.scss */
+/* line 378, style.scss */
 .human_off, #human:hover .human_on {
   display: none;
   padding-top: 30px;
 }
 
-/* line 392, style.scss */
+/* line 383, style.scss */
 .human_on, #human:hover .human_off {
   display: inline;
   padding-top: 30px;
 }
 
-/* line 397, style.scss */
+/* line 388, style.scss */
 .norn_off, #norn:hover .norn_on {
   display: none;
   padding-top: 30px;
 }
 
-/* line 402, style.scss */
+/* line 393, style.scss */
 .norn_on, #norn:hover .norn_off {
   display: inline;
   padding-top: 30px;
 }
 
-/* line 407, style.scss */
+/* line 398, style.scss */
 .charr_off, #charr:hover .charr_on {
   display: none;
   padding-top: 30px;
 }
 
-/* line 412, style.scss */
+/* line 403, style.scss */
 .charr_on, #charr:hover .charr_off {
   display: inline;
   padding-top: 30px;
 }
 
-/* line 417, style.scss */
+/* line 408, style.scss */
 #race-id {
   display: none;
   position: relative;
   padding: 30px;
   padding-left: 5%;
-  padding-right: 40%;
+  padding-right: 5%;
   left: 0;
   background: #878b91;
   text-align: left;
 }
-/* line 427, style.scss */
+/* line 418, style.scss */
 #race-id h3, #race-id h4, #race-id h5, #race-id h6, #race-id p {
   position: relative;
   top: -20px;
 }
-/* line 432, style.scss */
+/* line 423, style.scss */
 #race-id p {
   color: white;
 }
 
-/* line 437, style.scss */
+/* line 428, style.scss */
 .carousel {
   display: block;
   position: relative;
-  left: 0;
+  left: 20%;
+  max-width: 60%;
 }
 
-/* line 443, style.scss */
+/* line 435, style.scss */
 .race-image {
   position: absolute;
   right: -10%;
@@ -474,7 +468,20 @@ section > div {
   height: 60vh;
 }
 
-/* line 451, style.scss */
+/* line 442, style.scss */
+#professions {
+  position: relative;
+  top: 450px;
+  padding-bottom: 500px;
+}
+
+/* line 448, style.scss */
+#gamemodes {
+  position: relative;
+  top: 450px;
+  padding-bottom: 500px;
+}
+/* line 453, style.scss */
 #gamemodes iframe {
   position: relative;
   height: 900px;
@@ -482,7 +489,7 @@ section > div {
   padding-bottom: 300px;
 }
 
-/* line 459, style.scss */
+/* line 461, style.scss */
 #footer {
   display: block;
   position: absolute;
@@ -499,16 +506,47 @@ section > div {
   z-index: 0;
   padding-top: 20px;
 }
-/* line 474, style.scss */
+/* line 477, style.scss */
 #footer a {
   text-decoration: none;
 }
-/* line 477, style.scss */
+/* line 480, style.scss */
+#footer h2 {
+  color: white;
+}
+/* line 483, style.scss */
 #footer h3 {
   color: #878b91;
 }
+/* line 486, style.scss */
+#footer #bottom-dirt {
+  position: absolute;
+  align: center;
+  bottom: 100%;
+  z-index: -5;
+  left: 0;
+  width: 100%;
+  height: 70%;
+}
+/* line 495, style.scss */
+#footer #sylvari-model {
+  position: absolute;
+  left: 15%;
+  height: 280px;
+  align: left;
+  bottom: -10px;
+  z-index: -1;
+}
+/* line 503, style.scss */
+#footer #norn-model {
+  position: absolute;
+  right: 10%;
+  height: 320px;
+  bottom: -10px;
+  z-index: -1;
+}
 
-/* line 482, style.scss */
+/* line 512, style.scss */
 .social-media img {
   height: 65px;
   padding: 10px;
@@ -516,37 +554,37 @@ section > div {
   border-radius: 50%;
 }
 
-/* line 489, style.scss */
+/* line 519, style.scss */
 .facebook_off, #facebook:hover .facebook_on {
   display: none;
 }
 
-/* line 493, style.scss */
+/* line 523, style.scss */
 .facebook_on, #facebook:hover .facebook_off {
   display: inline;
 }
 
-/* line 497, style.scss */
+/* line 527, style.scss */
 .twitter_off, #twitter:hover .twitter_on {
   display: none;
 }
 
-/* line 501, style.scss */
+/* line 531, style.scss */
 .twitter_on, #twitter:hover .twitter_off {
   display: inline;
 }
 
-/* line 505, style.scss */
+/* line 535, style.scss */
 .pinterest_off, #pinterest:hover .pinterest_on {
   display: none;
 }
 
-/* line 509, style.scss */
+/* line 539, style.scss */
 .pinterest_on, #pinterest:hover .pinterest_off {
   display: inline;
 }
 
-/* line 513, style.scss */
+/* line 543, style.scss */
 #end {
   display: inline-block;
   position: absolute;
@@ -564,30 +602,33 @@ section > div {
   z-index: 0;
   padding-bottom: 0px;
 }
-/* line 530, style.scss */
+/* line 560, style.scss */
 #end p {
   color: #878b91;
   display: inline;
 }
-/* line 534, style.scss */
+/* line 564, style.scss */
 #end p a {
   color: #878b91;
   text-decoration: none;
 }
-/* line 537, style.scss */
+/* line 567, style.scss */
 #end p a:hover {
   color: #c00000;
 }
-/* line 542, style.scss */
+/* line 572, style.scss */
 #end p small {
   color: #878b91;
+  line-height: 0px;
+  padding-top: 0px;
+  top: -10px;
 }
-/* line 547, style.scss */
+/* line 580, style.scss */
 #end #penultimate-line {
   display: block;
   margin-top: 15px;
 }
-/* line 552, style.scss */
+/* line 585, style.scss */
 #end #last-line {
   display: block;
   margin-top: 15px;
