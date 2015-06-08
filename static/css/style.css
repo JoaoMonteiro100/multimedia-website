@@ -432,6 +432,12 @@ section > div {
 }
 
 /* line 408, style.scss */
+#race-list {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+/* line 413, style.scss */
 #race-id {
   display: none;
   position: relative;
@@ -442,17 +448,17 @@ section > div {
   background: #878b91;
   text-align: left;
 }
-/* line 418, style.scss */
+/* line 423, style.scss */
 #race-id h3, #race-id h4, #race-id h5, #race-id h6, #race-id p {
   position: relative;
   top: -20px;
 }
-/* line 423, style.scss */
+/* line 428, style.scss */
 #race-id p {
   color: white;
 }
 
-/* line 428, style.scss */
+/* line 433, style.scss */
 .carousel {
   display: block;
   position: relative;
@@ -460,7 +466,7 @@ section > div {
   max-width: 60%;
 }
 
-/* line 435, style.scss */
+/* line 440, style.scss */
 .race-image {
   position: absolute;
   right: -10%;
@@ -468,20 +474,20 @@ section > div {
   height: 60vh;
 }
 
-/* line 442, style.scss */
+/* line 447, style.scss */
 #professions {
   position: relative;
   top: 450px;
   padding-bottom: 500px;
 }
 
-/* line 448, style.scss */
+/* line 453, style.scss */
 #gamemodes {
   position: relative;
   top: 450px;
   padding-bottom: 500px;
 }
-/* line 453, style.scss */
+/* line 458, style.scss */
 #gamemodes iframe {
   position: relative;
   height: 975px;
@@ -489,7 +495,7 @@ section > div {
   padding-bottom: 300px;
 }
 
-/* line 461, style.scss */
+/* line 466, style.scss */
 #footer {
   display: block;
   position: absolute;
@@ -506,19 +512,19 @@ section > div {
   z-index: 0;
   padding-top: 20px;
 }
-/* line 477, style.scss */
+/* line 482, style.scss */
 #footer a {
   text-decoration: none;
 }
-/* line 480, style.scss */
+/* line 485, style.scss */
 #footer h2 {
   color: white;
 }
-/* line 483, style.scss */
+/* line 488, style.scss */
 #footer h3 {
   color: #878b91;
 }
-/* line 486, style.scss */
+/* line 491, style.scss */
 #footer #bottom-dirt {
   position: absolute;
   align: center;
@@ -528,7 +534,7 @@ section > div {
   width: 100%;
   height: 70%;
 }
-/* line 495, style.scss */
+/* line 500, style.scss */
 #footer #sylvari-model {
   position: absolute;
   left: 15%;
@@ -537,7 +543,7 @@ section > div {
   bottom: -10px;
   z-index: -1;
 }
-/* line 503, style.scss */
+/* line 508, style.scss */
 #footer #norn-model {
   position: absolute;
   right: 10%;
@@ -546,7 +552,7 @@ section > div {
   z-index: -1;
 }
 
-/* line 512, style.scss */
+/* line 517, style.scss */
 .social-media img {
   height: 65px;
   padding: 10px;
@@ -554,37 +560,37 @@ section > div {
   border-radius: 50%;
 }
 
-/* line 519, style.scss */
+/* line 524, style.scss */
 .facebook_off, #facebook:hover .facebook_on {
   display: none;
 }
 
-/* line 523, style.scss */
+/* line 528, style.scss */
 .facebook_on, #facebook:hover .facebook_off {
   display: inline;
 }
 
-/* line 527, style.scss */
+/* line 532, style.scss */
 .twitter_off, #twitter:hover .twitter_on {
   display: none;
 }
 
-/* line 531, style.scss */
+/* line 536, style.scss */
 .twitter_on, #twitter:hover .twitter_off {
   display: inline;
 }
 
-/* line 535, style.scss */
+/* line 540, style.scss */
 .pinterest_off, #pinterest:hover .pinterest_on {
   display: none;
 }
 
-/* line 539, style.scss */
+/* line 544, style.scss */
 .pinterest_on, #pinterest:hover .pinterest_off {
   display: inline;
 }
 
-/* line 543, style.scss */
+/* line 548, style.scss */
 #end {
   display: inline-block;
   position: absolute;
@@ -602,33 +608,33 @@ section > div {
   z-index: 0;
   padding-bottom: 0px;
 }
-/* line 560, style.scss */
+/* line 565, style.scss */
 #end p {
   color: #878b91;
   display: inline;
 }
-/* line 564, style.scss */
+/* line 569, style.scss */
 #end p a {
   color: #878b91;
   text-decoration: none;
 }
-/* line 567, style.scss */
+/* line 572, style.scss */
 #end p a:hover {
   color: #c00000;
 }
-/* line 572, style.scss */
+/* line 577, style.scss */
 #end p small {
   color: #878b91;
   line-height: 0px;
   padding-top: 0px;
   top: -10px;
 }
-/* line 580, style.scss */
+/* line 585, style.scss */
 #end #penultimate-line {
   display: block;
   margin-top: 15px;
 }
-/* line 585, style.scss */
+/* line 590, style.scss */
 #end #last-line {
   display: block;
   margin-top: 15px;
