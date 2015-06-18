@@ -24,14 +24,15 @@ $(document).ready(function(){
 google.load("visualization", "1", {packages:["corechart"]});
 google.setOnLoadCallback(drawChartRaces);
 google.setOnLoadCallback(drawChartProfs);
+
 function drawChartRaces() {
 	var data = google.visualization.arrayToDataTable([
 	  ['Race', 'Player percentage'],
-	  ['Asura',     16],
-	  ['Sylvari',      15],
-	  ['Human',  36],
+	  ['Asura', 16],
+	  ['Sylvari', 15],
+	  ['Human', 36],
 	  ['Norn', 19],
-	  ['Charr',    13]
+	  ['Charr', 13]
 	]);
 
 	var options = {
