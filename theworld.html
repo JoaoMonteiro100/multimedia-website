@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unveiling the Mists</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="static/images/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+	<link href="static/css/bootstrap.min.css" rel="stylesheet">
+	<link href="static/css/style.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="static/js/script.js"></script>
+	<script type="text/javascript" src="static/js/playlist.js"></script>
+	<script type="text/javascript" charset="utf-8" src="static/edge_includes/edge.6.0.0.min.js"></script>
+    <style>
+        .edgeLoad-EDGE-4986414 { visibility:hidden; }
+    </style>
+	<script>
+	   AdobeEdge.loadComposition('map', 'EDGE-4986414', {
+		scaleToFit: "both",
+		centerStage: "horizontal",
+		minW: "0px",
+		maxW: "undefined",
+		width: "1000px",
+		height: "1000px"
+	}, {dom: [ ]}, {dom: [ ]});
+	</script>
+	<!--[if IE]><script type="text/javascript" src="static/js/excanvas.js"></script><![endif]-->
+</head>
+
+<body>
+	<div id="wrapper">
+		<!-- navbar -->
+		<section id="navbar">
+			<!-- logo -->
+			<a href="index.html" id="logo"><div></div></a>
+			<!-- navigation -->
+			<ul>
+				<li>
+				  <a href="theworld.html" class="menu" id="theworld">The World <span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+					<li class="option"><a href="theworld.html#races">Races</a></li>
+					<li class="option"><a href="theworld.html#tyria">Tyria</a></li>
+				  </ul>
+				</li>
+				<li><a href="#professions" class="menu">Professions</a></li>
+				<li><a href="#gamemodes" class="menu">Game Modes</a></li>
+			</ul>
+		</section>
+		<section id="background" data-type="background" data-speed="10">
+			<div class="overlay"></div>
+		</section>
+
+		<!-- playlist -->
+		<section id="playlist">
+			<div id="music">
+
+				<audio id="audio" preload="auto" tabindex="0" controls="" >
+					<source src="static/music/Guild Wars 2 OST - 01. Overture.mp3">
+					Your Fallback goes here
+				</audio>
+				<ul id="playlist">
+					<li class="active">
+						<a href="static/music/Guild Wars 2 OST - 01. Overture.mp3">
+							<p>Overture</p>
+						</a>
+					</li>
+					<li>
+						<a href="static/music/Guild Wars 2 OST - 06. Heritage of Humanity.mp3">
+							<p>Heritage of Humanity</p>
+						</a>
+					</li>
+					<li>
+						<a href="static/music/Guild Wars 2 OST - 47. The Saga of the Norn.mp3">
+							<p>The Saga of the Norn</p>
+						</a>
+					</li>
+					<li>
+						<a href="static/music/Guild Wars 2 OST - 60. The Charr Triumphant.mp3">
+							<p>The Charr Triumphant</p>
+						</a>
+					</li>
+					<li>
+						<a href="static/music/Guild Wars 2 OST - 53. Battle of the Vanguard.mp3">
+							<p>Battle of the Vanguard</p>
+						</a>
+					</li>
+					<li>
+						<a href="static/music/Guild Wars 2 OST - 23. The Tengu Wall.mp3">
+							<p>The Tengu Wall</p>
+						</a>
+					</li>
+					<li>
+						<a href="static/music/Guild Wars 2 OST - 76. Scales of Issormir.mp3">
+							<p>Scales of Issormir</p>
+						</a>
+					</li>
+					<li>
+						<a href="static/music/Guild Wars 2 OST - Fear Not This Night (Complete Piano Version).mp3">
+							<p>Fear Not This Night</p>
+						</a>
+					</li>
+				</ul>
+
+			</div>
+		</section>
+		
+		<section id="content">
+			<!-- About Us -->
+			<div id="races">
+				<img id="red-header" src="static/images/header2.png" />
+				<h1>Races</h1>
+				<p>The world of <strong><i>Guild Wars 2</i></strong> is filled with exotic races with a deep lore and story. However, the playable races are restricted to five:<br>the snarky <strong>asura</strong>, the curious <strong>sylvari</strong>, the ferocious <strong>charr</strong>, the boasting <strong>norn</strong> and the resilient <strong>humans</strong>.
+				
+				<!-- race icons -->
+				<div class="race-list" id="race-list">
+					<a href="#race-list" id="asura" onclick="showAsura()">
+						<img class="asura_off" src="static/images/asura-art.png" style="width:200px;" alt="Asura"/>
+						<img class="asura_on" src="static/images/asura-art-dark.png" style="width:200px;" alt="Asura"/>
+					</a>
+					<a href="#race-list" id="sylvari" onclick="showSylvari()">
+						<img class="sylvari_off" src="static/images/sylvari-art.png" style="width:200px;" alt="Sylvari"/>
+						<img class="sylvari_on" src="static/images/sylvari-art-dark.png" style="width:200px;" alt="Sylvari"/>
+					</a>
+					<a href="#race-list" id="human" onclick="showHuman()">
+						<img class="human_off" src="static/images/human-art.png" style="width:200px;" alt="Human"/>
+						<img class="human_on" src="static/images/human-art-dark.png" style="width:200px;" alt="Human"/>
+					</a>
+					<a href="#race-list" id="norn" onclick="showNorn()">
+						<img class="norn_off" src="static/images/norn-art.png" style="width:200px;" alt="Norn"/>
+						<img class="norn_on" src="static/images/norn-art-dark.png" style="width:200px;" alt="Norn"/>
+					</a>
+					<a href="#race-list" id="charr" onclick="showCharr()">
+						<img class="charr_off" src="static/images/charr-art.png" style="width:200px;" alt="Charr"/>
+						<img class="charr_on" src="static/images/charr-art-dark.png" style="width:200px;" alt="Charr"/>
+					</a>
+				</div>
+				
+				<!-- race texts and galleries -->
+				<div id="race-id">
+					<div id="asura-id">
+						<div id="asura-text">
+							<h2>Asura<h2>
+							<h4><i>Brain, not brawn, will change the world.</i></h4>
+							<p>They may be short in stature, but these magical inventors are intellectual giants. Incredibly intelligent beings, the asura use their knowledge and skill with magic and crafting to assert their natural dominance. In the world of the asura, it is not the strong who survive, but the clever. Other races believe they should rule by virtue of their power and strength, but they delude themselves. All will serve the asura—in due time…</p>
+						</div>
+						<div id="asura-carousel" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#asura-carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#asura-carousel" data-slide-to="1"></li>
+								<li data-target="#asura-carousel" data-slide-to="2"></li>
+								<li data-target="#asura-carousel" data-slide-to="3"></li>
+								<li data-target="#asura-carousel" data-slide-to="4"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img class="first-slide" src="static/images/asura1.jpg" alt="First slide">
+								</div>
+								<div class="item">
+									<img class="second-slide" src="static/images/asura2.jpg" alt="Second slide">
+								</div>
+								<div class="item">
+									<img class="third-slide" src="static/images/asura3.jpg" alt="Third slide">
+								</div>
+								<div class="item">
+									<img class="fourth-slide" src="static/images/asura4.jpg" alt="Fourth slide">
+								</div>
+								<div class="item">
+									<img class="fifth-slide" src="static/images/asura5.jpg" alt="Fifth slide">
+								</div>
+							</div>
+							<a class="left carousel-control" href="#asura-carousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#asura-carousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+						<img class="race-image" src="static/images/asura-race.png" />
+					</div>
+					
+					<div id="sylvari-id">
+						<div id="sylvari-text">
+						<h2>Sylvari<h2>
+						<h4><i>Magic is a river that unites us in its current.</i></h4>
+						<p>Sylvari are not born. They awaken beneath the Pale Tree with knowledge gleaned in their pre-life Dream. These noble beings travel, seeking adventure and discovery. They struggle to balance curiosity with duty, eagerness with chivalry, and warfare with honor. Magic and mystery entwine to shape the future of this race that has so recently appeared.</p>
+						</div>
+						<div id="sylvari-carousel" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#sylvari-carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#sylvari-carousel" data-slide-to="1"></li>
+								<li data-target="#sylvari-carousel" data-slide-to="2"></li>
+								<li data-target="#sylvari-carousel" data-slide-to="3"></li>
+								<li data-target="#sylvari-carousel" data-slide-to="4"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img class="first-slide" src="static/images/sylvari1.jpg" alt="First slide">
+								</div>
+								<div class="item">
+									<img class="second-slide" src="static/images/sylvari2.jpg" alt="Second slide">
+								</div>
+								<div class="item">
+									<img class="third-slide" src="static/images/sylvari3.jpg" alt="Third slide">
+								</div>
+								<div class="item">
+									<img class="fourth-slide" src="static/images/sylvari4.jpg" alt="Fourth slide">
+								</div>
+								<div class="item">
+									<img class="fifth-slide" src="static/images/sylvari5.jpg" alt="Fifth slide">
+								</div>
+							</div>
+							<a class="left carousel-control" href="#sylvari-carousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#sylvari-carousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+						<img class="race-image" src="static/images/sylvari-race.png" />
+					</div>
+					
+					<div id="human-id">
+						<div id="human-text">
+						<h2>Human<h2>
+						<h4><i>Though in battle we fight for our homes, our gods and our queen... nothing can break our spirit.</i></h4>
+						<p>Humans have lost their homeland, their security, and their former glory. Even their gods have withdrawn. And yet, the human spirit remains unshaken. These brave defenders of Kryta continue to fight with every ounce of their strength.</p>
+						</div>
+						<div id="human-carousel" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#human-carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#human-carousel" data-slide-to="1"></li>
+								<li data-target="#human-carousel" data-slide-to="2"></li>
+								<li data-target="#human-carousel" data-slide-to="3"></li>
+								<li data-target="#human-carousel" data-slide-to="4"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img class="first-slide" src="static/images/human1.jpg" alt="First slide">
+								</div>
+								<div class="item">
+									<img class="second-slide" src="static/images/human2.jpg" alt="Second slide">
+								</div>
+								<div class="item">
+									<img class="third-slide" src="static/images/human3.jpg" alt="Third slide">
+								</div>
+								<div class="item">
+									<img class="fourth-slide" src="static/images/human4.jpg" alt="Fourth slide">
+								</div>
+								<div class="item">
+									<img class="fifth-slide" src="static/images/human5.jpg" alt="Fifth slide">
+								</div>
+							</div>
+							<a class="left carousel-control" href="#human-carousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#human-carousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+						<img class="race-image" src="static/images/human-race.png" />
+					</div>
+					
+					<div id="norn-id">
+						<div id="norn-text">
+						<h2>Norn<h2>
+						<h4><i>If you are bold enough, your legend will live forever.</i></h4>
+						<p>This race of towering hunters experienced a great defeat when the Ice Dragon drove them from their glacial homeland. Nevertheless, they won’t let one lost battle—no matter how punishing—dampen their enthusiasm for life and the hunt. They know that only the ultimate victor achieves legendary rewards.</p>
+						</div>
+						<div id="norn-carousel" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#norn-carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#norn-carousel" data-slide-to="1"></li>
+								<li data-target="#norn-carousel" data-slide-to="2"></li>
+								<li data-target="#norn-carousel" data-slide-to="3"></li>
+								<li data-target="#norn-carousel" data-slide-to="4"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img class="first-slide" src="static/images/norn1.jpg" alt="First slide">
+								</div>
+								<div class="item">
+									<img class="second-slide" src="static/images/norn2.jpg" alt="Second slide">
+								</div>
+								<div class="item">
+									<img class="third-slide" src="static/images/norn3.jpg" alt="Third slide">
+								</div>
+								<div class="item">
+									<img class="fourth-slide" src="static/images/norn4.jpg" alt="Fourth slide">
+								</div>
+								<div class="item">
+									<img class="fifth-slide" src="static/images/norn5.jpg" alt="Fifth slide">
+								</div>
+							</div>
+							<a class="left carousel-control" href="#norn-carousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#norn-carousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+						<img class="race-image" src="static/images/norn-race.png" />
+					</div>
+					
+					<div id="charr-id">
+						<div id="charr-text">
+						<h2>Charr<h2>
+						<h4><i>With the clamor of anvils and the thunder of guns, we rip each day from life's teeth.</i></h4>
+						<p>The charr race was forged in the merciless crucible of war. It is all they know. War defines them, and their quest for dominion drives them ever onward. The weakling and the fool have no place among the charr. Victory is all that matters, and it must be achieved by any means and at any cost.</p>
+						</div>
+						<div id="charr-carousel" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#charr-carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#charr-carousel" data-slide-to="1"></li>
+								<li data-target="#charr-carousel" data-slide-to="2"></li>
+								<li data-target="#charr-carousel" data-slide-to="3"></li>
+								<li data-target="#charr-carousel" data-slide-to="4"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img class="first-slide" src="static/images/charr1.jpg" alt="First slide">
+								</div>
+								<div class="item">
+									<img class="second-slide" src="static/images/charr2.jpg" alt="Second slide">
+								</div>
+								<div class="item">
+									<img class="third-slide" src="static/images/charr3.jpg" alt="Third slide">
+								</div>
+								<div class="item">
+									<img class="fourth-slide" src="static/images/charr4.jpg" alt="Fourth slide">
+								</div>
+								<div class="item">
+									<img class="fifth-slide" src="static/images/charr5.jpg" alt="Fifth slide">
+								</div>
+							</div>
+							<a class="left carousel-control" href="#charr-carousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#charr-carousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+						<img class="race-image" src="static/images/charr-race.png" />
+					</div>
+				</div>
+			</div>
+			
+			<!-- divider image -->
+			<div class="parallax">
+				<div class="bg__image"></div>
+			</div>
+			
+			<div id="tyria">
+				<h1>Tyria</h1>
+				<p>Tyria is the name of both the continent and the planet where the action takes place in Guild Wars 2. It covers a vast extension of the world, with its ecosystems ranging from <strong>lush jungles</strong> to <strong>inhospitable deserts</strong>, from <strong>high mountain peaks</strong> to deep inside <strong>volcanos' magma chambers</strong>.<br>
+				<br>In the game, there are <strong>six major city hubs</strong>: five of them correspond to <strong>each race's capital cities</strong>, while the sixth city is a free one, founded by pirates and tradesmen who settled on the ruins of a previously human dwelling.<br>
+				<br>You can learn more about them by <strong>interacting with the map below</strong>.</p>
+				<div id="Stage" class="EDGE-4986414">
+				</div>
+			</div>
+		</section>
+
+		<div id="footer">
+			<div class="parallax">
+				<div class="bg__image5"></div> 
+			</div>
+			<img id="bottom-dirt" src="static/images/bottom-dirt.png" />
+			<img id="sylvari-model" src="static/images/sylvari.png" />
+			<img id="norn-model" src="static/images/norn.png" />
+			<h2>Don't miss a beat</h2>
+			<h3><small>Follow us in social media</small></h3>
+			
+			<div class="social-media">
+				<a target="_blank" href="https://www.facebook.com/GuildWars2" id="facebook">
+					<img class="facebook_off" src="static/images/fb.png" alt="Facebook"/>
+					<img class="facebook_on" src="static/images/fb-dark.png" alt="Facebook"/>
+				</a>
+				<a target="_blank" href="https://twitter.com/GuildWars2/" id="twitter">
+					<img class="twitter_off" src="static/images/t.png" alt="Twitter"/>
+					<img class="twitter_on" src="static/images/t-dark.png" alt="Twitter"/>
+				</a>
+				<a target="_blank" href="https://www.pinterest.com/arenanet/" id="pinterest">
+					<img class="pinterest_off" src="static/images/p.png" alt="Pinterest"/>
+					<img class="pinterest_on" src="static/images/p-dark.png" alt="Pinterest"/>
+				</a>
+			</div>
+		</div>
+
+		<div id="end">
+
+			<div id="penultimate-line">
+				<br><p><small>It should be understood that NCsoft, the interlocking NC logo, ArenaNet, Arena.net, Guild Wars 2 and all associated logos and designs are trademarks or registered trademarks of NCsoft Corporation.</small></p>
+			</div>
+			<div id="last-line">
+				<br><p><small>Website designed and developed by <a target="_blank" href="http://www.joaommonteiro.pt">João Monteiro</a> and <a target="_blank" href="https://github.com/ei11069">Miguel Tavares</a>.</small></p>
+			</div>
+		</div>
+	</div>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="static/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="static/js/game-character.js"></script>
+    <script type="text/javascript">
+		prepareCanvas(document.getElementById("canvasDiv"), 570, 220);
+		document.getElementById("elementalist-icon").onmousedown = function() { becomeEle(); }
+		document.getElementById("mesmer-icon").onmousedown = function() { becomeMesmer(); }
+		document.getElementById("necromancer-icon").onmousedown = function() { becomeNecro(); }
+		document.getElementById("ranger-icon").onmousedown = function() { becomeRanger(); }
+		document.getElementById("thief-icon").onmousedown = function() { becomeThief(); }
+		document.getElementById("engineer-icon").onmousedown = function() { becomeEngi(); }
+		document.getElementById("guardian-icon").onmousedown = function() { becomeGuardian(); }
+		document.getElementById("warrior-icon").onmousedown = function() { becomeWarrior(); }
+    </script>
+	
+</body>
+</html>
