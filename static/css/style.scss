@@ -348,8 +348,15 @@ section > div {
 }
 
 #races {
-	position:relative;
-	top:60vh;
+	
+	#red-header {
+		position:absolute;
+		right:0;
+		top:300px;
+		width:50%;
+		z-index:-1;
+	}
+	
 	a {
 		text-decoration: none;
 	}
@@ -442,6 +449,16 @@ section > div {
 	right: -10%;
 	bottom: -10%;
 	height: 60vh;
+}
+
+#tyria {
+	position:relative;
+	top:450px;
+	padding-bottom:800px;
+	
+	#Stage {
+		top: 15px;
+	}
 }
 
 #professions {
