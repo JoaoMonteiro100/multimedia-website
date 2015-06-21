@@ -25,9 +25,10 @@
 			<a href="#" id="logo"><div></div></a>
 			<!-- navigation -->
 			<ul>
-				<li><a href="#races" class="menu">Races</a></li>
-				<li><a href="#professions" class="menu">Professions</a></li>
-				<li><a href="#gamemodes" class="menu">Game Modes</a></li>
+				<li><a href="index.html" class="menu" id="home">Home</a></li>
+				<li><a href="theworld.html" class="menu" id="theworld">The World</a></li>
+				<li><a href="#" class="menu" id="gameplay">Gameplay</a></li>
+				<li><a href="about us.html" class="menu" id="aboutus">About Us</a></li>
 			</ul>
 		</section>
 		<section id="background" data-type="background" data-speed="10">
@@ -36,13 +37,14 @@
 
 		<!-- playlist -->
 		<section id="playlist">
+			
 			<div id="music">
 
-				<audio id="audio" preload="auto" tabindex="0" controls="" >
-					<source src="static/music/Guild Wars 2 OST - 01. Overture.mp3">
+				<audio id="audio" preload="auto" tabindex="4" controls="" >
+					<source src="static/music/Guild Wars 2 OST - 76. Scales of Issormir.mp3">
 					Your Fallback goes here
 				</audio>
-				<ul id="playlist">
+				<ul>
 					<li class="active">
 						<a href="static/music/Guild Wars 2 OST - 01. Overture.mp3">
 							<p>Overture</p>
@@ -87,6 +89,11 @@
 
 			</div>
 		</section>
+		
+		<a href="javascript:null()" title="Show music options" onclick="showPlayer()"><img id="music-button" src="static/images/music.png" /></a>
+		<a href="javascript:null()" title="Hide music options" onclick="hidePlayer()"><img id="collapse-button" src="static/images/collapse.png" /></a>
+		<a href="javascript:null()" title="Hide playlist" onclick="hidePlaylist()"><img id="hide-button" src="static/images/hide.png" /></a>
+		<a href="javascript:null()" onclick="showPlaylist()"><div id="dropdown"><p><small><span class="caret"></span> Open playlist <span class="caret"></span></small></p></div></a>
 		
 		<section id="content">
 			<div id="professions">

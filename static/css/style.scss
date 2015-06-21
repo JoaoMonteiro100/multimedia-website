@@ -125,13 +125,13 @@ h4 ,h5,h6 {
 		}
 	}
 	
-	ul {
+	 ul {
 		position: relative;
 		display: block;
 		color: $white;
 		text-align: right;
 		margin-top: -100px;
-		margin-right: 10%;
+		margin-right: 5%;
 		font-family: 'Josefin Sans', sans-serif;
 		text-transform: uppercase;
 		font-size: 1.1em;
@@ -141,7 +141,7 @@ h4 ,h5,h6 {
 		
 		li {
 			display: inline;
-			margin: 2.5%;
+			margin: 1.3%;
 			
 			a.menu {
 				text-decoration: none;
@@ -156,25 +156,63 @@ h4 ,h5,h6 {
 	}
 }
 
+/*
 .dropdown-menu {
 	visibility: hidden;
-	position: absolute;
+	position: relative;
+	text-align: left;
 	top: 140px;
-	left: 63%;
-	min-width: 0;
-	margin: 0;
+	width: 5000px;
+	height: 5000px;
+	margin-top: -100px;
+	margin-right: 5%;
+	font-family: 'Josefin Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.1em;
 	padding: 10px;
 	text-align: left;
+	z-index: 99;
+	
+	li {
+		display: inline;
+		margin: 1.3%;
+		
+		a.menu {
+			text-decoration: none;
+			color: $white;
+			&:hover {
+				border-bottom: 3px solid $main-red;
+				padding-bottom: 0.5em;
+				color: $light-gray;
+			}
+		}
+	}
 	
 	&:hover {
 		visibility: visible;
 	}
 }
 
-#theworld:hover + .dropdown-menu{
+#dd1 {
+	right: 50px;
+}
+
+#home:hover + #dd1{
 	visibility: visible;
 }
 
+#theworld:hover + #dd2{
+	visibility: visible;
+}
+
+#gameplay:hover + #dd3{
+	visibility: visible;
+}
+
+#aboutus:hover + #dd4{
+	visibility: visible;
+}
+*/
 #navbar.after-scroll {
 	height: 80px;
 	background: $white;
@@ -204,6 +242,7 @@ h4 ,h5,h6 {
 	
 	ul {
 		margin-top: -65px;
+		margin-right: 5%;
 		font-size: 1em;
 		color: $dark-gray;
 		/* transition */
@@ -212,7 +251,7 @@ h4 ,h5,h6 {
 		
 		li {
 			display: inline;
-			margin: 2.5%;
+			margin: 1.3%;
 			
 			a.menu {
 				text-decoration: none;
@@ -638,11 +677,14 @@ section > div {
 #quiz {
 	position:relative;
 	top:450px;
-	padding-bottom:590px;
+	padding-bottom:560px;
 	
 	#Stage {
-		top: 15px;
-		zoom: 70%;
+		top: 25px;
+		zoom: 69.7%;
+		border-style: solid;
+		border-color: $medium-gray;
+		border-width: 2px;
 	}
 }
 

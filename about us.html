@@ -74,9 +74,10 @@
 			<a href="#" id="logo"><div></div></a>
 			<!-- navigation -->
 			<ul>
-				<li><a href="#races" class="menu">Races</a></li>
-				<li><a href="#professions" class="menu">Professions</a></li>
-				<li><a href="#gamemodes" class="menu">Game Modes</a></li>
+				<li><a href="index.html" class="menu" id="home">Home</a></li>
+				<li><a href="theworld.html" class="menu" id="theworld">The World</a></li>
+				<li><a href="gameplay.html" class="menu" id="gameplay">Gameplay</a></li>
+				<li><a href="#" class="menu" id="aboutus">About Us</a></li>
 			</ul>
 		</section>
 		<section id="background" data-type="background" data-speed="10">
@@ -85,13 +86,14 @@
 
 		<!-- playlist -->
 		<section id="playlist">
+			
 			<div id="music">
 
-				<audio id="audio" preload="auto" tabindex="0" controls="" >
-					<source src="static/music/Guild Wars 2 OST - 01. Overture.mp3">
+				<audio id="audio" preload="auto" tabindex="4" controls="" >
+					<source src="static/music/Guild Wars 2 OST - Fear Not This Night (Complete Piano Version).mp3">
 					Your Fallback goes here
 				</audio>
-				<ul id="playlist">
+				<ul>
 					<li class="active">
 						<a href="static/music/Guild Wars 2 OST - 01. Overture.mp3">
 							<p>Overture</p>
@@ -137,6 +139,11 @@
 			</div>
 		</section>
 		
+		<a href="javascript:null()" title="Show music options" onclick="showPlayer()"><img id="music-button" src="static/images/music.png" /></a>
+		<a href="javascript:null()" title="Hide music options" onclick="hidePlayer()"><img id="collapse-button" src="static/images/collapse.png" /></a>
+		<a href="javascript:null()" title="Hide playlist" onclick="hidePlaylist()"><img id="hide-button" src="static/images/hide.png" /></a>
+		<a href="javascript:null()" onclick="showPlaylist()"><div id="dropdown"><p><small><span class="caret"></span> Open playlist <span class="caret"></span></small></p></div></a>
+		
 		<section id="content">
 			<!-- About Us -->
 			<div id="about-us">
@@ -160,7 +167,7 @@
 			<div id="quiz">
 				<h1>Quiz</h1>
 				<p>Did you learn anything by interacting with this website? Did you <strong>Unveil the Mists</strong> in search of knowledge?
-				<br><br>Why don't you take the quiz below and find out?</p>
+				<br>Why don't you take the quiz below and find out?</p>
 			
 				<div id="Stage" class="EDGE-435226">
 				</div>

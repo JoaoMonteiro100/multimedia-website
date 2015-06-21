@@ -39,15 +39,40 @@
 			<a href="index.html" id="logo"><div></div></a>
 			<!-- navigation -->
 			<ul>
+				<li><a href="index.html" class="menu" id="home">Home</a></li>
+				<li><a href="#" class="menu" id="theworld">The World</a></li>
+				<li><a href="gameplay.html" class="menu" id="gameplay">Gameplay</a></li>
+				<li><a href="about us.html" class="menu" id="aboutus">About Us</a></li>
+			<!--
+				<li>
+				  <a href="index.html" class="menu" id="home">Home <span class="caret"></span></a>
+				  <ul class="dropdown-menu" id="dd1">
+					<li class="option"><a href="index.html#thegame">The Game</a></li>
+					<li class="option"><a href="index.html#gallery">Gallery</a></li>
+				  </ul>
+				</li>
 				<li>
 				  <a href="theworld.html" class="menu" id="theworld">The World <span class="caret"></span></a>
-				  <ul class="dropdown-menu">
+				  <ul class="dropdown-menu" id="dd2">
 					<li class="option"><a href="theworld.html#races">Races</a></li>
 					<li class="option"><a href="theworld.html#tyria">Tyria</a></li>
 				  </ul>
 				</li>
-				<li><a href="#professions" class="menu">Professions</a></li>
-				<li><a href="#gamemodes" class="menu">Game Modes</a></li>
+				<li>
+					<a href="gameplay.html" class="menu" id="gameplay">Gameplay <span class="caret"></a>
+					<ul class="dropdown-menu" id="dd3">
+						<li class="option"><a href="gameplay.html#professions">Professions</a></li>
+						<li class="option"><a href="gameplay.html#gamemodes">Game Modes</a></li>
+					</ul>
+				</li>
+				<li>
+				  <a href="about us.html" class="menu" id="aboutus">About Us <span class="caret"></span></a>
+				  <ul class="dropdown-menu" id="dd4">
+					<li class="option"><a href="index.html#thegame">About Us</a></li>
+					<li class="option"><a href="index.html#gallery">Quiz</a></li>
+				  </ul>
+				</li>
+			-->
 			</ul>
 		</section>
 		<section id="background" data-type="background" data-speed="10">
@@ -56,13 +81,14 @@
 
 		<!-- playlist -->
 		<section id="playlist">
+			
 			<div id="music">
 
-				<audio id="audio" preload="auto" tabindex="0" controls="" >
-					<source src="static/music/Guild Wars 2 OST - 01. Overture.mp3">
+				<audio id="audio" preload="auto" tabindex="4" controls="" >
+					<source src="static/music/Guild Wars 2 OST - 23. The Tengu Wall.mp3">
 					Your Fallback goes here
 				</audio>
-				<ul id="playlist">
+				<ul>
 					<li class="active">
 						<a href="static/music/Guild Wars 2 OST - 01. Overture.mp3">
 							<p>Overture</p>
@@ -107,6 +133,11 @@
 
 			</div>
 		</section>
+		
+		<a href="javascript:null()" title="Show music options" onclick="showPlayer()"><img id="music-button" src="static/images/music.png" /></a>
+		<a href="javascript:null()" title="Hide music options" onclick="hidePlayer()"><img id="collapse-button" src="static/images/collapse.png" /></a>
+		<a href="javascript:null()" title="Hide playlist" onclick="hidePlaylist()"><img id="hide-button" src="static/images/hide.png" /></a>
+		<a href="javascript:null()" onclick="showPlaylist()"><div id="dropdown"><p><small><span class="caret"></span> Open playlist <span class="caret"></span></small></p></div></a>
 		
 		<section id="content">
 			<!-- About Us -->
