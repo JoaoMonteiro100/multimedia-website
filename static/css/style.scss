@@ -609,9 +609,15 @@ section > div {
 }
 
 #professions {
-	position:relative;
-	top:450px;
-	padding-bottom:500px;
+
+	
+	#red-header {
+		position:absolute;
+		right:0;
+		top:300px;
+		width:50%;
+		z-index:-1;
+	}
 }
 
 #gamemodes {

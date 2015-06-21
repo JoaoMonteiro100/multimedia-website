@@ -47,6 +47,7 @@ function hidePlayer() {
 function showPlaylist() {
 	document.getElementById('dropdown').style.visibility = "hidden";
 	document.getElementById('hide-button').style.visibility = "visible";
+	
 	var songs = document.getElementById("playlist").getElementsByTagName("ul");
 	for (i = 0; i < songs.length; i++) { 
 		songs[i].style.visibility = "visible";
@@ -56,6 +57,7 @@ function showPlaylist() {
 function hidePlaylist() {
 	document.getElementById('dropdown').style.visibility = "visible";
 	document.getElementById('hide-button').style.visibility = "hidden";
+	
 	var songs = document.getElementById("playlist").getElementsByTagName("ul");
 	for (i = 0; i < songs.length; i++) { 
 		songs[i].style.visibility = "hidden";

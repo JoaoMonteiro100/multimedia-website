@@ -646,20 +646,22 @@ section > div {
   top: 15px;
 }
 
-/* line 611, style.scss */
-#professions {
-  position: relative;
-  top: 450px;
-  padding-bottom: 500px;
+/* line 614, style.scss */
+#professions #red-header {
+  position: absolute;
+  right: 0;
+  top: 300px;
+  width: 50%;
+  z-index: -1;
 }
 
-/* line 617, style.scss */
+/* line 623, style.scss */
 #gamemodes {
   position: relative;
   top: 450px;
   padding-bottom: 500px;
 }
-/* line 622, style.scss */
+/* line 628, style.scss */
 #gamemodes iframe {
   position: relative;
   height: 975px;
@@ -667,35 +669,35 @@ section > div {
   padding-bottom: 300px;
 }
 
-/* line 630, style.scss */
+/* line 636, style.scss */
 #gallery {
   position: relative;
   height: 975px;
   padding-top: 530px;
   padding-bottom: 1050px;
 }
-/* line 636, style.scss */
+/* line 642, style.scss */
 #gallery #links {
   align: center;
   margin-top: 30px;
   left: auto;
   right: auto;
 }
-/* line 643, style.scss */
+/* line 649, style.scss */
 #gallery a {
   text-decoration: none;
 }
-/* line 647, style.scss */
+/* line 653, style.scss */
 #gallery a img {
   padding-top: 5px;
   opacity: 0.8;
 }
-/* line 651, style.scss */
+/* line 657, style.scss */
 #gallery a img:hover {
   opacity: 1;
 }
 
-/* line 657, style.scss */
+/* line 663, style.scss */
 #footer {
   display: block;
   position: absolute;
@@ -712,19 +714,19 @@ section > div {
   z-index: 0;
   padding-top: 20px;
 }
-/* line 673, style.scss */
+/* line 679, style.scss */
 #footer a {
   text-decoration: none;
 }
-/* line 676, style.scss */
+/* line 682, style.scss */
 #footer h2 {
   color: white;
 }
-/* line 679, style.scss */
+/* line 685, style.scss */
 #footer h3 {
   color: #878b91;
 }
-/* line 682, style.scss */
+/* line 688, style.scss */
 #footer #bottom-dirt {
   position: absolute;
   align: center;
@@ -734,7 +736,7 @@ section > div {
   width: 100%;
   height: 70%;
 }
-/* line 691, style.scss */
+/* line 697, style.scss */
 #footer #sylvari-model {
   position: absolute;
   left: 15%;
@@ -743,7 +745,7 @@ section > div {
   bottom: -10px;
   z-index: -1;
 }
-/* line 699, style.scss */
+/* line 705, style.scss */
 #footer #norn-model {
   position: absolute;
   right: 10%;
@@ -752,7 +754,7 @@ section > div {
   z-index: -1;
 }
 
-/* line 708, style.scss */
+/* line 714, style.scss */
 .social-media img {
   height: 65px;
   padding: 10px;
@@ -760,37 +762,37 @@ section > div {
   border-radius: 50%;
 }
 
-/* line 715, style.scss */
+/* line 721, style.scss */
 .facebook_off, #facebook:hover .facebook_on {
   display: none;
 }
 
-/* line 719, style.scss */
+/* line 725, style.scss */
 .facebook_on, #facebook:hover .facebook_off {
   display: inline;
 }
 
-/* line 723, style.scss */
+/* line 729, style.scss */
 .twitter_off, #twitter:hover .twitter_on {
   display: none;
 }
 
-/* line 727, style.scss */
+/* line 733, style.scss */
 .twitter_on, #twitter:hover .twitter_off {
   display: inline;
 }
 
-/* line 731, style.scss */
+/* line 737, style.scss */
 .pinterest_off, #pinterest:hover .pinterest_on {
   display: none;
 }
 
-/* line 735, style.scss */
+/* line 741, style.scss */
 .pinterest_on, #pinterest:hover .pinterest_off {
   display: inline;
 }
 
-/* line 739, style.scss */
+/* line 745, style.scss */
 #end {
   display: inline-block;
   position: absolute;
@@ -808,33 +810,33 @@ section > div {
   z-index: 0;
   padding-bottom: 0px;
 }
-/* line 756, style.scss */
+/* line 762, style.scss */
 #end p {
   color: #878b91;
   display: inline;
 }
-/* line 760, style.scss */
+/* line 766, style.scss */
 #end p a {
   color: #878b91;
   text-decoration: none;
 }
-/* line 763, style.scss */
+/* line 769, style.scss */
 #end p a:hover {
   color: #c00000;
 }
-/* line 768, style.scss */
+/* line 774, style.scss */
 #end p small {
   color: #878b91;
   line-height: 0px;
   padding-top: 0px;
   top: -10px;
 }
-/* line 776, style.scss */
+/* line 782, style.scss */
 #end #penultimate-line {
   display: block;
   margin-top: 15px;
 }
-/* line 781, style.scss */
+/* line 787, style.scss */
 #end #last-line {
   display: block;
   margin-top: 15px;
