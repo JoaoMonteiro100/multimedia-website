@@ -11,6 +11,16 @@ a {
   text-decoration: none;
 }
 
+.btn-primary {
+	background-color: $secondary-red;
+	border-color: $main-red;
+	
+	&:hover {
+		background-color: $main-red;
+		border-color: $main-red;
+	}
+}
+
 body {
 	background: $light-gray;
 	margin:0;
@@ -363,7 +373,7 @@ section > div {
 }
 
 .bg__image {
-	background-image: url("../images/bg1.jpg");
+	background-image: url("../images/bg11.jpg");
 }
 
 .bg__image2 {
@@ -377,15 +387,20 @@ section > div {
 .bg__image4 {
 	background-image: url("../images/fight.gif");
 	position: absolute;
-	bottom: 225px;
+	bottom: 240px;
 	width: 100%;
 	z-index: -5;
 }
 
 .bg__image5 {
-	background-image: url("../images/bg4.jpg");
+	background-image: url("../images/bg5.jpg");
+}
+
+.bg__image6 {
+	background-image: url("../images/bg4.jpg") !important;
 	position: absolute;
-	bottom: 225px;
+	bottom: 240px;
+	width: 100%;
 	z-index: -5;
 	background-position: right bottom;
 }
@@ -520,6 +535,24 @@ section > div {
 		height: 975px;
 		padding-top: 50px;
 		padding-bottom: 300px;
+	}
+}
+
+#gallery {
+	position: relative;
+	height: 975px;
+	padding-top: 530px;
+	padding-bottom: 1050px;
+	
+	#links {
+		align: center;
+		margin-top: 30px;
+		left: auto;
+		right: auto;
+	}
+	
+	img {
+		padding-top: 5px;
 	}
 }
 
