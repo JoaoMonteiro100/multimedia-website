@@ -255,29 +255,30 @@ h4, h5, h6 {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(67, 74, 84, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: -2;
 }
 
 /* line 255, style.scss */
 #playlist {
   position: absolute;
-  left: 0;
-  top: 330px;
-  width: 15%;
+  right: 0;
+  top: 230px;
+  width: 20%;
 }
 
-/* line 264, style.scss */
+/* line 263, style.scss */
 #playlist .active a, #audio .active a {
   color: #c00000;
   text-decoration: none;
 }
-/* line 269, style.scss */
+/* line 268, style.scss */
 #playlist ul, #audio ul {
   position: relative;
   top: 0;
   left: -40px;
   width: 100%;
+  visibility: hidden;
 }
 /* line 277, style.scss */
 #playlist li .active, #audio li .active {
@@ -309,12 +310,41 @@ h4, h5, h6 {
 }
 
 /* line 306, style.scss */
-#audio {
-  display: block;
-  width: 90%;
+#dropdown {
+  position: absolute;
+  background: #6c0000;
+  width: 100%;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  top: 98px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  opacity: 0.8;
+  text-align: center;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+/* line 321, style.scss */
+#dropdown:hover {
+  opacity: 1;
+  height: 25px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+/* line 327, style.scss */
+#dropdown:hover small {
+  font-size: 0.75em;
+  vertical-align: bottom;
 }
 
-/* line 311, style.scss */
+/* line 335, style.scss */
+#audio {
+  display: block;
+  width: 100%;
+}
+
+/* line 340, style.scss */
 #content {
   padding-top: 250px;
   padding-bottom: 435px;
@@ -326,11 +356,11 @@ h4, h5, h6 {
   z-index: -1;
 }
 
-/* line 321, style.scss */
+/* line 350, style.scss */
 #about-us {
   padding-bottom: 340px;
 }
-/* line 324, style.scss */
+/* line 353, style.scss */
 #about-us img {
   position: absolute;
   right: 0;
@@ -339,11 +369,7 @@ h4, h5, h6 {
   z-index: -1;
 }
 
-/* line 333, style.scss */
-#the-game {
-  padding-bottom: 340px;
-}
-/* line 336, style.scss */
+/* line 363, style.scss */
 #the-game img {
   position: absolute;
   right: 0;
@@ -352,7 +378,7 @@ h4, h5, h6 {
   z-index: -1;
 }
 
-/* line 345, style.scss */
+/* line 372, style.scss */
 #piechart_3d {
   float: left;
   width: 50%;
@@ -360,7 +386,7 @@ h4, h5, h6 {
   padding-top: 50px;
 }
 
-/* line 352, style.scss */
+/* line 379, style.scss */
 #columnchart_values {
   float: left;
   width: 50%;
@@ -368,12 +394,12 @@ h4, h5, h6 {
   padding-top: 50px;
 }
 
-/* line 359, style.scss */
+/* line 386, style.scss */
 section > div {
   padding-top: 70px;
 }
 
-/* line 363, style.scss */
+/* line 390, style.scss */
 [class*="bg__"] {
   position: absolute;
   left: 0;
@@ -386,22 +412,22 @@ section > div {
   box-shadow: inset 0 0 1em #010101;
 }
 
-/* line 375, style.scss */
+/* line 402, style.scss */
 .bg__image {
-  background-image: url("../images/bg11.jpg");
+  background-image: url("../images/bg8.jpg");
 }
 
-/* line 379, style.scss */
+/* line 406, style.scss */
 .bg__image2 {
   background-image: url("../images/bg2.jpg");
 }
 
-/* line 383, style.scss */
+/* line 410, style.scss */
 .bg__image3 {
   background-image: url("../images/bg3.jpg");
 }
 
-/* line 387, style.scss */
+/* line 414, style.scss */
 .bg__image4 {
   background-image: url("../images/fight.gif");
   position: absolute;
@@ -410,12 +436,12 @@ section > div {
   z-index: -5;
 }
 
-/* line 395, style.scss */
+/* line 422, style.scss */
 .bg__image5 {
   background-image: url("../images/bg5.jpg");
 }
 
-/* line 399, style.scss */
+/* line 426, style.scss */
 .bg__image6 {
   background-image: url("../images/bg4.jpg") !important;
   position: absolute;
@@ -425,7 +451,7 @@ section > div {
   background-position: right bottom;
 }
 
-/* line 410, style.scss */
+/* line 437, style.scss */
 #races #red-header {
   position: absolute;
   right: 0;
@@ -433,78 +459,78 @@ section > div {
   width: 50%;
   z-index: -1;
 }
-/* line 418, style.scss */
+/* line 445, style.scss */
 #races a {
   text-decoration: none;
 }
 
-/* line 423, style.scss */
+/* line 450, style.scss */
 .asura_off, #asura:hover .asura_on {
   display: none;
   padding-top: 30px;
 }
 
-/* line 428, style.scss */
+/* line 455, style.scss */
 .asura_on, #asura:hover .asura_off {
   display: inline;
   padding-top: 30px;
 }
 
-/* line 433, style.scss */
+/* line 460, style.scss */
 .sylvari_off, #sylvari:hover .sylvari_on {
   display: none;
   padding-top: 30px;
 }
 
-/* line 438, style.scss */
+/* line 465, style.scss */
 .sylvari_on, #sylvari:hover .sylvari_off {
   display: inline;
   padding-top: 30px;
 }
 
-/* line 443, style.scss */
+/* line 470, style.scss */
 .human_off, #human:hover .human_on {
   display: none;
   padding-top: 30px;
 }
 
-/* line 448, style.scss */
+/* line 475, style.scss */
 .human_on, #human:hover .human_off {
   display: inline;
   padding-top: 30px;
 }
 
-/* line 453, style.scss */
+/* line 480, style.scss */
 .norn_off, #norn:hover .norn_on {
   display: none;
   padding-top: 30px;
 }
 
-/* line 458, style.scss */
+/* line 485, style.scss */
 .norn_on, #norn:hover .norn_off {
   display: inline;
   padding-top: 30px;
 }
 
-/* line 463, style.scss */
+/* line 490, style.scss */
 .charr_off, #charr:hover .charr_on {
   display: none;
   padding-top: 30px;
 }
 
-/* line 468, style.scss */
+/* line 495, style.scss */
 .charr_on, #charr:hover .charr_off {
   display: inline;
   padding-top: 30px;
 }
 
-/* line 473, style.scss */
+/* line 500, style.scss */
 #race-list {
   padding-top: 50px;
   margin-top: -50px;
 }
 
-/* line 478, style.scss */
+/* line 505, style.scss */
 #race-id {
   display: none;
   position: relative;
@@ -515,17 +541,17 @@ section > div {
   background: #878b91;
   text-align: left;
 }
-/* line 488, style.scss */
+/* line 515, style.scss */
 #race-id h3, #race-id h4, #race-id h5, #race-id h6, #race-id p {
   position: relative;
   top: -20px;
 }
-/* line 493, style.scss */
+/* line 520, style.scss */
 #race-id p {
   color: white;
 }
 
-/* line 498, style.scss */
+/* line 525, style.scss */
 .carousel {
   display: block;
   position: relative;
@@ -533,7 +559,7 @@ section > div {
   max-width: 60%;
 }
 
-/* line 505, style.scss */
+/* line 532, style.scss */
 .race-image {
   position: absolute;
   right: -10%;
@@ -541,31 +567,31 @@ section > div {
   height: 60vh;
 }
 
-/* line 512, style.scss */
+/* line 539, style.scss */
 #tyria {
   position: relative;
   top: 450px;
   padding-bottom: 800px;
 }
-/* line 517, style.scss */
+/* line 544, style.scss */
 #tyria #Stage {
   top: 15px;
 }
 
-/* line 522, style.scss */
+/* line 549, style.scss */
 #professions {
   position: relative;
   top: 450px;
   padding-bottom: 500px;
 }
 
-/* line 528, style.scss */
+/* line 555, style.scss */
 #gamemodes {
   position: relative;
   top: 450px;
   padding-bottom: 500px;
 }
-/* line 533, style.scss */
+/* line 560, style.scss */
 #gamemodes iframe {
   position: relative;
   height: 975px;
@@ -573,26 +599,35 @@ section > div {
   padding-bottom: 300px;
 }
 
-/* line 541, style.scss */
+/* line 568, style.scss */
 #gallery {
   position: relative;
   height: 975px;
   padding-top: 530px;
   padding-bottom: 1050px;
 }
-/* line 547, style.scss */
+/* line 574, style.scss */
 #gallery #links {
   align: center;
   margin-top: 30px;
   left: auto;
   right: auto;
 }
-/* line 554, style.scss */
-#gallery img {
+/* line 581, style.scss */
+#gallery a {
+  text-decoration: none;
+}
+/* line 585, style.scss */
+#gallery a img {
   padding-top: 5px;
+  opacity: 0.8;
+}
+/* line 589, style.scss */
+#gallery a img:hover {
+  opacity: 1;
 }
 
-/* line 559, style.scss */
+/* line 595, style.scss */
 #footer {
   display: block;
   position: absolute;
@@ -609,19 +644,19 @@ section > div {
   z-index: 0;
   padding-top: 20px;
 }
-/* line 575, style.scss */
+/* line 611, style.scss */
 #footer a {
   text-decoration: none;
 }
-/* line 578, style.scss */
+/* line 614, style.scss */
 #footer h2 {
   color: white;
 }
-/* line 581, style.scss */
+/* line 617, style.scss */
 #footer h3 {
   color: #878b91;
 }
-/* line 584, style.scss */
+/* line 620, style.scss */
 #footer #bottom-dirt {
   position: absolute;
   align: center;
@@ -631,7 +666,7 @@ section > div {
   width: 100%;
   height: 70%;
 }
-/* line 593, style.scss */
+/* line 629, style.scss */
 #footer #sylvari-model {
   position: absolute;
   left: 15%;
@@ -640,7 +675,7 @@ section > div {
   bottom: -10px;
   z-index: -1;
 }
-/* line 601, style.scss */
+/* line 637, style.scss */
 #footer #norn-model {
   position: absolute;
   right: 10%;
@@ -649,7 +684,7 @@ section > div {
   z-index: -1;
 }
 
-/* line 610, style.scss */
+/* line 646, style.scss */
 .social-media img {
   height: 65px;
   padding: 10px;
@@ -657,37 +692,37 @@ section > div {
   border-radius: 50%;
 }
 
-/* line 617, style.scss */
+/* line 653, style.scss */
 .facebook_off, #facebook:hover .facebook_on {
   display: none;
 }
 
-/* line 621, style.scss */
+/* line 657, style.scss */
 .facebook_on, #facebook:hover .facebook_off {
   display: inline;
 }
 
-/* line 625, style.scss */
+/* line 661, style.scss */
 .twitter_off, #twitter:hover .twitter_on {
   display: none;
 }
 
-/* line 629, style.scss */
+/* line 665, style.scss */
 .twitter_on, #twitter:hover .twitter_off {
   display: inline;
 }
 
-/* line 633, style.scss */
+/* line 669, style.scss */
 .pinterest_off, #pinterest:hover .pinterest_on {
   display: none;
 }
 
-/* line 637, style.scss */
+/* line 673, style.scss */
 .pinterest_on, #pinterest:hover .pinterest_off {
   display: inline;
 }
 
-/* line 641, style.scss */
+/* line 677, style.scss */
 #end {
   display: inline-block;
   position: absolute;
@@ -705,33 +740,33 @@ section > div {
   z-index: 0;
   padding-bottom: 0px;
 }
-/* line 658, style.scss */
+/* line 694, style.scss */
 #end p {
   color: #878b91;
   display: inline;
 }
-/* line 662, style.scss */
+/* line 698, style.scss */
 #end p a {
   color: #878b91;
   text-decoration: none;
 }
-/* line 665, style.scss */
+/* line 701, style.scss */
 #end p a:hover {
   color: #c00000;
 }
-/* line 670, style.scss */
+/* line 706, style.scss */
 #end p small {
   color: #878b91;
   line-height: 0px;
   padding-top: 0px;
   top: -10px;
 }
-/* line 678, style.scss */
+/* line 714, style.scss */
 #end #penultimate-line {
   display: block;
   margin-top: 15px;
 }
-/* line 683, style.scss */
+/* line 719, style.scss */
 #end #last-line {
   display: block;
   margin-top: 15px;
