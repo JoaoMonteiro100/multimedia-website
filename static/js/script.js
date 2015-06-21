@@ -19,6 +19,50 @@ $(document).ready(function(){
 });
 
 /*
+	Music options
+*/
+function showPlayer() {
+	document.getElementById('music-button').style.visibility = "hidden";
+	document.getElementById('playlist').style.visibility = "visible";
+	document.getElementById('audio').style.visibility = "visible";
+	document.getElementById('dropdown').style.visibility = "visible";
+	document.getElementById('collapse-button').style.visibility = "visible";
+}
+
+function hidePlayer() {
+	document.getElementById('music-button').style.visibility = "visible";
+	document.getElementById('dropdown').style.visibility = "hidden";
+	document.getElementById('playlist').style.visibility = "hidden";
+	document.getElementById('audio').style.visibility = "hidden";
+	document.getElementById('collapse-button').style.visibility = "hidden";
+	document.getElementById('dropdown').style.visibility = "hidden";
+	document.getElementById('hide-button').style.visibility = "hidden";
+	
+	var songs = document.getElementById("playlist").getElementsByTagName("ul");
+	for (i = 0; i < songs.length; i++) { 
+		songs[i].style.visibility = "hidden";
+	}
+}
+
+function showPlaylist() {
+	document.getElementById('dropdown').style.visibility = "hidden";
+	document.getElementById('hide-button').style.visibility = "visible";
+	var songs = document.getElementById("playlist").getElementsByTagName("ul");
+	for (i = 0; i < songs.length; i++) { 
+		songs[i].style.visibility = "visible";
+	}
+}
+
+function hidePlaylist() {
+	document.getElementById('dropdown').style.visibility = "visible";
+	document.getElementById('hide-button').style.visibility = "hidden";
+	var songs = document.getElementById("playlist").getElementsByTagName("ul");
+	for (i = 0; i < songs.length; i++) { 
+		songs[i].style.visibility = "hidden";
+	}
+}
+
+/*
 	Pie chart for player breakdown by race
 */
 google.load("visualization", "1", {packages:["corechart"]});

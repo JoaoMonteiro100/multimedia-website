@@ -256,10 +256,12 @@ h4 ,h5,h6 {
 	position: absolute;
 	right: 0;
 	top: 230px;
-	width: 20%;
+	width: 15%;
 }
 
 #playlist, #audio {
+	visibility: hidden;
+	
 	.active a {
 		color: $main-red;
 		text-decoration:none;
@@ -268,9 +270,11 @@ h4 ,h5,h6 {
 	ul {
 		position:relative;
 		top: 0;
-		left: -40px;
+		left: 0;
+		right: 0;
 		width: 100%;
 		visibility: hidden;
+		list-style-type: none;
 	}
 	
 	li {
@@ -303,20 +307,72 @@ h4 ,h5,h6 {
 	}
 }
 
+#music-button {
+	position: absolute;
+	visibility: visible;
+	height: 35px;
+	padding: 0;
+	margin: 0;
+	top: 310px;
+	right: 1%;
+	opacity: 0.8;
+	
+	&:hover {
+		opacity: 1;
+		-webkit-filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.8));
+	}
+}
+
+#collapse-button {
+	position: absolute;
+	visibility: hidden;
+	height: 25px;
+	padding: 0;
+	margin: 0;
+	top: 310px;
+	right: 15.5%;
+	opacity: 0.8;
+	
+	&:hover {
+		opacity: 1;
+	}
+}
+
+#hide-button {
+	position: absolute;
+	visibility: hidden;
+	height: 30px;
+	padding: 0;
+	margin: 0;
+	top: 335px;
+	right: 12.8%;
+	opacity: 0.8;
+	
+	&:hover {
+		opacity: 1;
+	}
+}
+
 #dropdown {
 	position: absolute;
+	visibility: hidden;
 	background: $secondary-red;
-	width: 100%;
+	width: 15%;
 	height: 20px;
 	padding: 0;
 	margin: 0;
-	top: 98px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	top: 328px;
+	right: 0;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
 	opacity: 0.8;
 	text-align: center;
 	-webkit-transition: all 0.1s ease;
 	transition: all 0.1s ease;
+	
+	small {
+		color: $white;
+	}
 	
 	&:hover {
 		opacity: 1;
@@ -327,6 +383,7 @@ h4 ,h5,h6 {
 		small {
 			font-size: 0.75em;
 			vertical-align: bottom;
+			color: $white;
 		}
 		
 	}	
@@ -367,6 +424,11 @@ h4 ,h5,h6 {
 		width:50%;
 		z-index:-1;
 	}
+}
+
+#gw2-logo {
+	padding-top: 20px;
+	width: 50%;
 }
 
 #piechart_3d {
