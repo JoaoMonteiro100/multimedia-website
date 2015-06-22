@@ -26,6 +26,8 @@ body {
 	margin:0;
 	padding:0;
 	height:100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 p {
@@ -509,7 +511,7 @@ section > div {
 }
 
 .bg__image3 {
-	background-image: url("../images/bg3.jpg");
+	background-image: url("../images/bg2.jpg");
 }
 
 .bg__image4 {
@@ -525,9 +527,9 @@ section > div {
 }
 
 .bg__image6 {
-	background-image: url("../images/bg4.jpg") !important;
+	background-image: url("../images/bg4.jpg");
 	position: absolute;
-	bottom: 240px;
+	bottom: 220px;
 	width: 100%;
 	z-index: -5;
 	background-position: right bottom;
@@ -535,6 +537,22 @@ section > div {
 
 .bg__image7 {
 	background-image: url("../images/bg10.jpg");
+}
+
+.bg__image8 {
+	background-image: url("../images/bg11.jpg");
+	position: absolute;
+	bottom: 220px;
+	width: 100%;
+	z-index: -5;
+}
+
+.bg__image9 {
+	background-image: url("../images/bg3.jpg");
+	position: absolute;
+	bottom: 220px;
+	width: 100%;
+	z-index: -5;
 }
 
 #races {
@@ -677,7 +695,6 @@ section > div {
 #quiz {
 	position:relative;
 	top:450px;
-	padding-bottom:560px;
 	
 	#Stage {
 		top: 25px;
