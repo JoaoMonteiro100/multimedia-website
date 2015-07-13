@@ -22,11 +22,11 @@ THE SOFTWARE.
 
 // settings
 
-var physics_accuracy = 3,
+var physics_accuracy = 1,
     mouse_influence = 20,
     mouse_cut = 5,
-    gravity = 1200,
-    cloth_height = 50,
+    gravity = 1000,
+    cloth_height = 42,
     cloth_width = 85,
     start_y = 20,
     spacing = 7,
