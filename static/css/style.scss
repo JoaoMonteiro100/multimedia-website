@@ -445,6 +445,39 @@ h4 ,h5,h6 {
 	text-align: center;
 	z-index: -1;
 }
+
+#navigation {
+	background: $medium-gray;
+	width: 10%;
+	position: fixed;
+	top: 300px;
+	left: 0;
+	z-index: 999;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.4));
+	padding: 0;
+	opacity: 0.8;
+	
+	h4 {
+		color: $secondary-red;
+	}
+	
+	a {
+		color: $black;
+		line-height: 150%;
+		
+		&:hover {
+			text-decoration: none;
+			color: $secondary-red;
+		}
+	}
+	
+	&:hover {
+		opacity: 0.95;
+	}
+}
+
 #about-us {
 	padding-bottom: 340px;
 	
@@ -718,7 +751,7 @@ section > div {
 #gallery {
 	position: relative;
 	height: 975px;
-	padding-top: 530px;
+	margin-top: 450px;
 	padding-bottom: 1050px;
 	
 	#links {
