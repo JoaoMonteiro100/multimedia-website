@@ -104,10 +104,12 @@
 				<h1>The Game</h1>
 				<p><strong><a href="https://www.guildwars2.com/en/" target="_blank">Guild Wars 2</a></strong> is a <strong>MMORPG</strong> (Massively Multiplayer Online Role-Playing Game) developed by <strong>ArenaNet</strong> and published by <strong>NCSoft</strong>. Its action takes place in <strong>Tyria</strong>, a continent inhabited by exotic creatures and strange cultures. There is <strong>magic</strong> in the world of Guild Wars 2, but there's <strong>technology</strong> as well. Some species (referred to as races in-game) have some magical tendencies, whereas others are more adept at developing technology and using it to achieve their goals.
 				<br><br>A player can choose to play any of the <strong>five available races</strong>, and then must also choose one of <strong>eight professions</strong>. There are no restrictions on any combination so, even if it's not common in the lore of the game, it's possible for a player to create an asura (magical creatures) who is an engineer (a technological profession).
-				<br><br>Having won <strong>hundreds of accolades</strong> and being perceived by the industry as one of the <strong>best MMORPGs of all time</strong>, Guild Wars 2's innovative path started in 2005 with its prequel, <a href="http://www.guildwars.com/en/" target="_blank">Guild Wars</a>, and will soon be cemented by the first expansion to Guild Wars 2, <strong><a href="https://heartofthorns.guildwars2.com/en/" target="_blank">Guild Wars 2: Heart of Thorns</a></strong>.</p>
+				<br><br>Having won <strong>hundreds of accolades</strong> and being perceived by the industry as one of the <strong>best MMORPGs of all time</strong>, Guild Wars 2's innovative path started in 2005 with its prequel, <a href="http://www.guildwars.com/en/" target="_blank">Guild Wars</a>, and will soon be cemented by the first expansion to Guild Wars 2, <strong><a href="https://heartofthorns.guildwars2.com/en/" target="_blank">Guild Wars 2: Heart of Thorns</a></strong>.
+				<br><br><br>Interact with the cloth below to unveil the Guild Wars 2 logo. You can click on it to move it, or right-click to tear it apart.</p>
 			</div>
 			
 			<img id="gw2-logo" src="static/images/gw2-logo.png" />
+			<canvas id="c"></canvas>
 			
 			<!-- divider image -->
 			<div class="parallax">
@@ -303,8 +305,17 @@
 		</div>
 	</div>
 	
+	<script type="text/javascript">
+        document.getElementById('close').onmousedown = function(e) {
+            e.preventDefault();
+            document.getElementById('info').style.display = 'none';
+            return false;
+        };
+    </script>
+	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="static/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="static/js/cloth.js"></script>
 	<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 	<script src="static/js/bootstrap-image-gallery.js"></script>
 </body>

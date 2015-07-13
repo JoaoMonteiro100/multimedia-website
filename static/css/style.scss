@@ -472,6 +472,15 @@ h4 ,h5,h6 {
 	width: 50%;
 }
 
+#c {
+	position:relative;
+	top:-420px;
+	width: 50%;
+	margin:auto;
+	z-index:0;
+	margin-bottom: -420px;
+}
+
 #piechart_3d {
 	float:left;
 	width: 50%;
@@ -504,6 +513,7 @@ section > div {
 
 .bg__image {
 	background-image: url("../images/bg8.jpg");
+	position: absolute;
 }
 
 .bg__image2 {
